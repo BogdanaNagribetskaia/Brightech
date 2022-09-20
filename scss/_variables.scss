@@ -1,0 +1,34 @@
+// COLORS
+$c-indigo: #1b3764;
+$c-alice-blue: #f4f8ff;
+$c-ghost-white: #f6f8fc;
+$c-white: #ffffff;
+$c-sunglow: #ffca42;
+$c-spanish-gray: #969aa0;
+$c-light-steel-blue: #b4c7e7;
+$c-black: #141414;
+
+// Fonts
+$f-Cardo: "Cardo", serif;
+$f-Inter: "Inter", sans-serif;
+
+// Font size
+$fs-header: 17px;
+$fs-description: 18px;
+$fs-base: 19px;
+$fs-h5: 21px;
+$fs-h4: 24px;
+$fs-h1: 64px;
+
+$fs-h2: 48px;
+$fs-text-input-button: 14px;
+$fs-text-footer: 18px;
+
+// Letter spacing
+// $ls-base: 2;
+
+// Transition
+$t-normal: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+
+// Box Shadow
+$bs-normal: 3px 4px 7px rgba($c-alice-blue, 0.1);

@@ -1,0 +1,10 @@
+.logo {
+  @include flex;
+
+  &__img {
+    @include flex;
+    &:first-child {
+      margin-right: 9.5px;
+    }
+  }
+}

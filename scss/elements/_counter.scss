@@ -1,0 +1,37 @@
+.counter {
+  &__title {
+    font-family: $f-Cardo;
+    font-size: $fs-h4;
+    line-height: 28.8px;
+    letter-spacing: 0.48 px;
+    position: relative;
+    margin-left: 29px;
+    margin-bottom: 16px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 7px;
+      left: -28px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: $c-sunglow;
+      line-height: 78px;
+    }
+  }
+
+  &:nth-child(2) {
+    margin-left: 57px;
+  }
+
+  &:nth-child(3) {
+    margin-left: 69px;
+  }
+
+  &__description {
+    margin-left: 28px;
+    font-size: $fs-header;
+    color: $c-light-steel-blue;
+  }
+}

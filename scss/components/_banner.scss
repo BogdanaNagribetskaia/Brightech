@@ -1,0 +1,90 @@
+.banner {
+  background-color: $c-indigo;
+  color: $c-white;
+
+  &__wrapper {
+    @include flex;
+    padding-top: 99px;
+    padding-bottom: 100px;
+  }
+
+  &__description {
+    padding-left: 23px;
+
+    &--subtitle {
+      margin-left: 50px;
+      font-family: $f-Cardo;
+      font-size: $fs-h5;
+      letter-spacing: 1.2px;
+      line-height: 36px;
+      position: relative;
+
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 50%;
+        left: -48px;
+        width: 35px;
+        height: 2px;
+        background-color: $c-sunglow;
+        line-height: 78px;
+      }
+    }
+
+    &--title {
+      font-family: $f-Cardo;
+      font-size: $fs-h1;
+      letter-spacing: 1.3px;
+      line-height: 78px;
+      margin-top: 10px;
+
+      &:nth-child(3) {
+        margin-top: 0;
+      }
+    }
+
+    &--about {
+      margin-top: 24px;
+      font-size: $fs-description;
+      color: $c-light-steel-blue;
+      font-weight: 400;
+      line-height: 28.5px;
+      margin-top: 24px;
+
+      &:nth-child(5) {
+        margin-top: 0;
+      }
+    }
+  }
+
+  &__button-link {
+    margin-top: 41px;
+    display: flex;
+    align-items: center;
+
+    &--link {
+      margin-left: 62px;
+      font-family: $f-Cardo;
+      font-size: $fs-base;
+      letter-spacing: 0.38 px;
+      line-height: 30.4px;
+      border-bottom: 1px solid $c-white;
+    }
+  }
+
+  &__counters {
+    margin-top: 47px;
+    display: flex;
+  }
+
+  &__content {
+    padding-right: 21px;
+    max-width: 592px;
+    max-height: 800px;
+
+    &__image {
+      max-width: 592px;
+      max-height: 800px;
+    }
+  }
+}

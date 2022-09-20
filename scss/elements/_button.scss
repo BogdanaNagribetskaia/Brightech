@@ -1,0 +1,29 @@
+.button {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  background-color: $c-sunglow;
+  padding: 18px 52px 19px;
+  height: 66px;
+  font-family: $f-Cardo;
+  font-size: $fs-base;
+  border: 2px solid $c-sunglow;
+  cursor: pointer;
+  transition: $t-normal;
+  max-width: 222px;
+
+  &__text {
+    letter-spacing: 0.57 px;
+    // line-height: 28.5;
+  }
+
+  &:hover {
+    background-color: $c-white;
+    box-shadow: inset 0 0 0 1px $c-sunglow;
+  }
+
+  &__transparent {
+    background-color: transparent;
+    border: 2px solid $c-sunglow;
+  }
+}
