@@ -795,6 +795,115 @@ ul {
   letter-spacing: 0.19 px;
 }
 
+.partners {
+  background-color: #f5f5f5;
+}
+.partners__wrapper {
+  padding: 158px 0 126px;
+}
+.partners__title {
+  font-family: "Cardo", serif;
+  font-size: 42px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.partners__title::before {
+  content: "";
+  position: absolute;
+  top: 72px;
+  left: 50%;
+  width: 50px;
+  height: 3px;
+  background-color: #ffca42;
+  line-height: 78px;
+}
+.partners__cards {
+  margin-top: 75px;
+  margin-left: 3px;
+  display: flex;
+}
+.partners__card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 313px;
+  min-height: 254px;
+}
+.partners__card--logo {
+  max-width: 189px;
+  min-height: 100px;
+}
+.partners__card--title {
+  margin-top: 26px;
+  font-family: "Cardo", serif;
+  font-size: 24px;
+}
+.partners__card--description {
+  display: flex;
+  text-align: center;
+  margin-top: 22px;
+  font-size: 19px;
+  color: #969aa0;
+  line-height: 28.5px;
+}
+.partners__card:nth-child(2) {
+  margin-left: 14px;
+}
+.partners__card:nth-child(3) {
+  margin-left: 18px;
+}
+.partners__card:nth-child(4) {
+  margin-left: 13px;
+}
+
+.bookstores {
+  background-color: #1b3764;
+}
+.bookstores__wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 50%;
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+.bookstores__description {
+  padding-top: 21px;
+  max-width: 605px;
+}
+.bookstores__title {
+  color: #ffffff !important;
+  margin-top: 52px;
+  font-family: "Cardo", serif;
+  font-size: 42px;
+  line-height: 50.4px;
+  position: relative;
+}
+.bookstores__title::before {
+  content: "";
+  position: absolute;
+  top: 74px;
+  left: 0;
+  width: 50px;
+  height: 3px;
+  background-color: #ffca42;
+  line-height: 78px;
+}
+.bookstores__about {
+  color: #b4c7e7;
+  margin-top: 55px;
+  font-size: 19px;
+  line-height: 28.5px;
+  color: #969aa0;
+}
+.bookstores__button {
+  margin-top: 28px;
+}
+.bookstores__content {
+  display: flex;
+  flex-direction: column;
+}
+
 .logo {
   display: flex;
   justify-content: space-between;

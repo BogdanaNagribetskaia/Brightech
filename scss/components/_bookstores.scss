@@ -1,0 +1,39 @@
+.bookstores {
+  background-color: $c-indigo;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-basis: 50%;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  &__description {
+    padding-top: 21px;
+    max-width: 605px;
+  }
+
+  &__title {
+    color: $c-white !important;
+    margin-top: 52px;
+    @include title2;
+  }
+
+  &__about {
+    color: $c-light-steel-blue;
+    margin-top: 55px;
+    font-size: $fs-base;
+    line-height: 28.5px;
+    color: $c-spanish-gray;
+  }
+
+  &__button {
+    margin-top: 28px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+  }
+}

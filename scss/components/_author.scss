@@ -39,21 +39,7 @@
 
   &__title {
     margin-top: 45px;
-    font-family: $f-Cardo;
-    font-size: $fs-h2;
-    line-height: 50.4px;
-    position: relative;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 74px;
-      left: 0;
-      width: 50px;
-      height: 3px;
-      background-color: $c-sunglow;
-      line-height: 78px;
-    }
+    @include title2;
   }
 
   &__about {

@@ -7,23 +7,7 @@
   }
 
   &__title {
-    font-family: $f-Cardo;
-    font-size: $fs-h2;
-    display: flex;
-    justify-content: center;
-    position: relative;
-
-    &::before {
-      content: "";
-      position: absolute;
-      top: 72px;
-      left: 50%;
-      // !todo
-      width: 50px;
-      height: 3px;
-      background-color: $c-sunglow;
-      line-height: 78px;
-    }
+    @include title;
   }
 
   &__content {

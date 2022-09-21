@@ -3,6 +3,44 @@
 // font-size: em(18);
 // @include size(30);
 
+@mixin title {
+  font-family: $f-Cardo;
+  font-size: $fs-h2;
+  display: flex;
+  justify-content: center;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 72px;
+    left: 50%;
+    // !todo
+    width: 50px;
+    height: 3px;
+    background-color: $c-sunglow;
+    line-height: 78px;
+  }
+}
+
+@mixin title2 {
+  font-family: $f-Cardo;
+  font-size: $fs-h2;
+  line-height: 50.4px;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 74px;
+    left: 0;
+    width: 50px;
+    height: 3px;
+    background-color: $c-sunglow;
+    line-height: 78px;
+  }
+}
+
 @mixin flex {
   display: flex;
   justify-content: space-between;

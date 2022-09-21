@@ -1,0 +1,61 @@
+.partners {
+  background-color: $c-cultured;
+  &__wrapper {
+    padding: 158px 0 126px;
+  }
+
+  &__title {
+    @include title;
+  }
+
+  &__cards {
+    margin-top: 75px;
+    margin-left: 3px;
+    display: flex;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 313px;
+    min-height: 254px;
+
+    &--logo {
+      max-width: 189px;
+      min-height: 100px;
+    }
+
+    &--title {
+      margin-top: 26px;
+      font-family: $f-Cardo;
+      font-size: $fs-h4;
+
+      // &:first-child {
+      //   margin-top: 21px;
+      //   margin-left: 50px;
+      // }
+    }
+
+    &--description {
+      display: flex;
+      text-align: center;
+      margin-top: 22px;
+      font-size: $fs-base;
+      color: $c-spanish-gray;
+      line-height: 28.5px;
+    }
+
+    &:nth-child(2) {
+      margin-left: 14px;
+    }
+
+    &:nth-child(3) {
+      margin-left: 18px;
+    }
+
+    &:nth-child(4) {
+      margin-left: 13px;
+    }
+  }
+}
