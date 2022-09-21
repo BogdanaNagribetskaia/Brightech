@@ -35,3 +35,43 @@
     color: $c-light-steel-blue;
   }
 }
+
+.counter2 {
+  display: flex;
+
+  &__title {
+    font-family: $f-Cardo;
+    font-size: $fs-h5 - 1px;
+    line-height: 30.8px;
+    position: relative;
+    margin-left: 27px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 7px;
+      left: -28px;
+      width: 16px;
+      height: 16px;
+      border-radius: 50%;
+      background-color: $c-sunglow;
+    }
+  }
+
+  &:nth-child(2) {
+    margin-left: 34px;
+  }
+
+  &:nth-child(3) {
+    margin-left: 69px;
+  }
+
+  &__description {
+    display: flex;
+    align-items: center;
+    margin-left: 28px;
+    font-size: $fs-base;
+    color: $c-spanish-gray;
+    line-height: 27px;
+  }
+}

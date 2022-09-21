@@ -1,5 +1,6 @@
 .bookstores {
   background-color: $c-indigo;
+  color: $c-white;
 
   &__wrapper {
     display: flex;
@@ -15,7 +16,7 @@
   }
 
   &__title {
-    color: $c-white !important;
+    color: $c-white;
     margin-top: 52px;
     @include title2;
   }
@@ -29,7 +30,27 @@
   }
 
   &__button {
+    background-color: transparent;
+    border: 2px solid $c-sunglow;
     margin-top: 28px;
+    color: $c-white;
+    padding: 18px 52px 19px;
+    height: 66px;
+    font-family: $f-Cardo;
+    font-size: $fs-base;
+    cursor: pointer;
+    transition: $t-normal;
+    max-width: 236px;
+
+    &__text {
+      letter-spacing: 0.57 px;
+    }
+
+    &:hover {
+      color: $c-indigo;
+      background-color: $c-white;
+      box-shadow: inset 0 0 0 1px $c-sunglow;
+    }
   }
 
   &__content {

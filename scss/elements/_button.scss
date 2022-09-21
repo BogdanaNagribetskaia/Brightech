@@ -13,6 +13,7 @@
   max-width: 222px;
 
   &__text {
+    color: $c-indigo;
     letter-spacing: 0.57 px;
   }
 
@@ -24,5 +25,11 @@
   &__transparent {
     background-color: transparent;
     border: 2px solid $c-sunglow;
+  }
+
+  &__chapster {
+    max-width: 429px;
+    padding: 18px 100px 19px;
+    height: 74px;
   }
 }

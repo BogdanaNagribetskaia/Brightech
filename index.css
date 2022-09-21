@@ -683,11 +683,10 @@ ul {
 .author__content {
   height: 620px;
   position: relative;
-  right: 30px;
+  right: 26px;
 }
 .author__content--image {
   position: relative;
-  width: 525px;
   max-width: 525px;
   max-height: 620px;
   z-index: 90;
@@ -696,7 +695,7 @@ ul {
   content: "";
   position: absolute;
   top: 30px;
-  left: 32px;
+  left: 28px;
   width: 525px;
   height: 620px;
   border: 10px solid #ffca42;
@@ -859,6 +858,7 @@ ul {
 
 .bookstores {
   background-color: #1b3764;
+  color: #ffffff;
 }
 .bookstores__wrapper {
   display: flex;
@@ -872,7 +872,7 @@ ul {
   max-width: 605px;
 }
 .bookstores__title {
-  color: #ffffff !important;
+  color: #ffffff;
   margin-top: 52px;
   font-family: "Cardo", serif;
   font-size: 42px;
@@ -897,11 +897,217 @@ ul {
   color: #969aa0;
 }
 .bookstores__button {
+  background-color: transparent;
+  border: 2px solid #ffca42;
   margin-top: 28px;
+  color: #ffffff;
+  padding: 18px 52px 19px;
+  height: 66px;
+  font-family: "Cardo", serif;
+  font-size: 19px;
+  cursor: pointer;
+  transition: 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  max-width: 236px;
+}
+.bookstores__button__text {
+  letter-spacing: 0.57 px;
+}
+.bookstores__button:hover {
+  color: #1b3764;
+  background-color: #ffffff;
+  box-shadow: inset 0 0 0 1px #ffca42;
 }
 .bookstores__content {
   display: flex;
   flex-direction: column;
+}
+
+.learning {
+  background-color: #f5f5f5;
+}
+.learning__wrapper {
+  padding-top: 138px;
+  padding-bottom: 190px;
+  flex: 50%;
+}
+.learning__title {
+  font-family: "Cardo", serif;
+  font-size: 42px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.learning__title::before {
+  content: "";
+  position: absolute;
+  top: 72px;
+  left: 50%;
+  width: 50px;
+  height: 3px;
+  background-color: #ffca42;
+  line-height: 78px;
+}
+.learning__container {
+  margin-top: 70px;
+  display: flex;
+  justify-content: space-between;
+}
+.learning__description {
+  display: flex;
+  flex-direction: column;
+}
+.learning__cards {
+  display: flex;
+  flex: 50%;
+}
+.learning__cards:nth-child(1) {
+  margin-top: 78px;
+  margin-bottom: 30px;
+}
+.learning__card {
+  padding: 38px 0 0 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 50%;
+  background-color: #f4f8ff;
+  color: #1b3764;
+  width: 276px;
+  height: 232px;
+  position: relative;
+}
+.learning__card--number {
+  margin-left: 11px;
+  color: #1b3764;
+  font-family: "Cardo", serif;
+  font-size: 25px;
+  position: relative;
+  z-index: 90;
+}
+.learning__card--number::before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: -10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #ffca42;
+  z-index: -1;
+}
+.learning__card--description {
+  margin-top: 42px;
+  font-family: "Cardo", serif;
+  font-size: 24px;
+  line-height: 33.6px;
+}
+.learning__card:nth-child(2) {
+  margin-left: 30px;
+}
+.learning__content {
+  position: relative;
+  right: 37px;
+  top: 26px;
+}
+.learning__content--image {
+  position: relative;
+  z-index: 90;
+}
+.learning__content::after {
+  content: "";
+  position: absolute;
+  top: 20px;
+  left: 19px;
+  width: 535px;
+  height: 632px;
+  border: 10px solid #ffca42;
+}
+
+.chapters {
+  background-color: #f4f8ff;
+}
+.chapters__wrapper {
+  padding-top: 118px;
+  padding-bottom: 122px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.chapters__title {
+  font-family: "Cardo", serif;
+  font-size: 42px;
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+.chapters__title::before {
+  content: "";
+  position: absolute;
+  top: 72px;
+  left: 50%;
+  width: 50px;
+  height: 3px;
+  background-color: #ffca42;
+  line-height: 78px;
+}
+.chapters__description {
+  display: flex;
+  flex-direction: column;
+}
+.chapters__cards {
+  margin-left: 3px;
+  display: flex;
+  flex: 50%;
+}
+.chapters__cards:nth-child(1) {
+  margin-top: 98px;
+  margin-bottom: 42px;
+}
+.chapters__card {
+  padding: 42px 0 0 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 50%;
+  background-color: #ffffff;
+  color: #1b3764;
+  width: 595px;
+  height: 198px;
+  position: relative;
+}
+.chapters__card--title {
+  font-family: "Cardo", serif;
+  font-size: 24px;
+}
+.chapters__card--description {
+  color: #969aa0;
+  margin-top: 42px;
+  font-size: 19px;
+  line-height: 33.6px;
+  margin-top: 21px;
+}
+.chapters__card:nth-child(2) {
+  margin-left: 30px;
+}
+.chapters__counter {
+  display: flex;
+  margin-top: 8px;
+}
+.chapters__footer {
+  margin-top: 72px;
+  font-size: 18px;
+  color: #969aa0;
+  text-align: center;
+}
+.chapters__footer--text {
+  margin-top: 39px;
+}
+.chapters__footer--text:nth-child(3) {
+  margin-top: 3px;
+}
+.chapters__footer--link {
+  color: #1b3764;
+  line-height: 28.5px;
 }
 
 .logo {
@@ -1056,6 +1262,7 @@ ul {
   max-width: 222px;
 }
 .button__text {
+  color: #1b3764;
   letter-spacing: 0.57 px;
 }
 .button:hover {
@@ -1065,6 +1272,11 @@ ul {
 .button__transparent {
   background-color: transparent;
   border: 2px solid #ffca42;
+}
+.button__chapster {
+  max-width: 429px;
+  padding: 18px 100px 19px;
+  height: 74px;
 }
 
 .counter__title {
@@ -1097,6 +1309,41 @@ ul {
   margin-left: 28px;
   font-size: 17px;
   color: #b4c7e7;
+}
+
+.counter2 {
+  display: flex;
+}
+.counter2__title {
+  font-family: "Cardo", serif;
+  font-size: 20px;
+  line-height: 30.8px;
+  position: relative;
+  margin-left: 27px;
+}
+.counter2__title::before {
+  content: "";
+  position: absolute;
+  bottom: 7px;
+  left: -28px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #ffca42;
+}
+.counter2:nth-child(2) {
+  margin-left: 34px;
+}
+.counter2:nth-child(3) {
+  margin-left: 69px;
+}
+.counter2__description {
+  display: flex;
+  align-items: center;
+  margin-left: 28px;
+  font-size: 19px;
+  color: #969aa0;
+  line-height: 27px;
 }
 
 .card {
