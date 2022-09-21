@@ -1,0 +1,49 @@
+.books {
+  background-color: $c-cultured;
+  color: $c-indigo;
+
+  &__wrapper {
+    padding: 127px 50px 148px 50px;
+  }
+
+  &__title {
+    font-family: $f-Cardo;
+    font-size: $fs-h2;
+    display: flex;
+    justify-content: center;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 72px;
+      left: 50%;
+      // !todo
+      width: 50px;
+      height: 3px;
+      background-color: $c-sunglow;
+      line-height: 78px;
+    }
+  }
+
+  &__content {
+    margin-top: 100px;
+    display: flex;
+    flex-basis: 50%;
+  }
+
+  &__card {
+    // max-width: 382px;
+    display: flex;
+    flex-basis: 50%;
+
+    &:first-child {
+      margin-left: 20px;
+    }
+
+    &--image {
+      max-width: 285px;
+      max-height: 382px;
+    }
+  }
+}
