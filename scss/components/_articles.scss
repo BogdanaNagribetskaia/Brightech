@@ -1,0 +1,135 @@
+.articles {
+  position: relative;
+  background-color: $c-alice-blue;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-top: 125px;
+    padding-bottom: 0px;
+    position: relative;
+  }
+
+  &__title {
+    @include title;
+  }
+
+  &__main {
+    margin-top: 96px;
+    position: relative;
+  }
+
+  &__carousel {
+    padding-bottom: 145px;
+  }
+}
+
+.js-slider-button {
+  display: block;
+  position: absolute;
+  overflow: hidden;
+  z-index: 10;
+  width: 50px;
+  height: 50px;
+  top: 50%;
+  left: 0;
+  border-radius: 50%;
+  border: 0;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  padding: 0;
+
+  // ::after {
+  //   content: "";
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   width: 50px;
+  //   height: 50px;
+  //   border-radius: 50%;
+  //   background-color: $c-sunglow;
+  //   z-index: 100;
+  // }
+}
+
+.js-slider-button-next {
+  left: unset;
+  right: 0;
+  transform: translate(50%, -50%) rotate(180deg);
+}
+
+.swiper {
+  // margin-bottom: 100px;
+
+  &__wrapper {
+    display: flex;
+  }
+}
+
+.card {
+  width: 100%;
+  height: 624px;
+  background-color: $c-white;
+  color: $c-indigo;
+
+  &:nth-child(2) {
+    margin-right: 20px;
+  }
+
+  &__wrapper {
+    padding: 25px 30px 30px 30px;
+  }
+  &__image {
+    margin-bottom: 30px;
+    width: 100%;
+    // width: 420px;
+    // height: 305px;
+  }
+
+  &__title {
+    font-size: $fs-h4;
+    font-family: $f-Cardo;
+    margin-bottom: 15px;
+    line-height: 33.6px;
+  }
+
+  &__description {
+    text-transform: none;
+    text-align: initial;
+    margin-bottom: 40px;
+    font-size: $fs-base;
+    line-height: 30.4px;
+    color: $c-spanish-gray;
+  }
+
+  &__footer {
+    display: flex;
+    align-items: center;
+    margin-top: 11px;
+    justify-content: space-between;
+  }
+
+  &__link {
+    color: $c-indigo;
+    font-size: $fs-base;
+    font-family: $f-Cardo;
+    line-height: 22.8px;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 30px;
+      left: 0;
+      width: 95px;
+      height: 2px;
+      background-color: $c-indigo;
+    }
+  }
+
+  &__date {
+    color: $c-indigo;
+    font-size: $fs-header - 1px;
+  }
+}

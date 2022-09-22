@@ -5,6 +5,7 @@
   <meta charset="UTF-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="index.css" />
   <title>Pages</title>
 </head>
@@ -38,14 +39,6 @@
         <path
           d="M6.073 25.6h23.927v-25.6h-23.994c-2.21 0.007-3.999 1.814-4.006 4.045v23.572h0.001c0 0.010-0.001 0.020-0.001 0.030 0 2.36 1.835 4.353 4.006 4.353h23.994v-2.133h-23.994c-0.991 0-1.893-1.058-1.893-2.22 0-1.109 0.897-2.047 1.959-2.047zM8.34 2.155h6.34v11.521l-3.196-2.833-3.143 2.816v-11.505zM4.113 4.061c-0.003-1.060 0.843-1.922 1.893-1.928h0.22v14.4h2.089l3.175-2.844 3.208 2.844h2.093v-14.4h11.094v21.333h-21.814c-0.687 0-1.362 0.181-1.959 0.525v-19.931h-0.001z">
         </path>
-      </symbol>
-      <symbol id="icon-left" viewBox="0 0 32 32">
-        <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.9091"
-          d="M24.276 32l-16.552-16.094 16.552-15.906"></path>
-      </symbol>
-      <symbol id="icon-right" viewBox="0 0 32 32">
-        <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.9091"
-          d="M7.724 32l16.552-16.094-16.552-15.906"></path>
       </symbol>
       <symbol id="icon-facebook" viewBox="0 0 32 32">
         <path
@@ -189,13 +182,13 @@
             <!-- Card  -->
             <div class="books__card">
               <img class="books__card--image" src="./assets/img/card2.jpg" alt="Book">
-              <div class="card">
-                <h3 class="card__title">Atomic One’s</h3>
-                <h5 class="card__price">$ 13.84 USD</h5>
-                <p class="card__description">As the book contains theoretical content as well as solved questions.
+              <div class="card1">
+                <h3 class="card1__title">Atomic One’s</h3>
+                <h5 class="card1__price">$ 13.84 USD</h5>
+                <p class="card1__description">As the book contains theoretical content as well as solved questions.
                 </p>
-                <div class="card__printed">Printed Book</div>
-                <div class="card__button">
+                <div class="card1__printed">Printed Book</div>
+                <div class="card1__button">
                   <button class="button button__transparent">
                     <span class="button__text">
                       Order Now
@@ -207,13 +200,13 @@
             <!-- Card 2  -->
             <div class="books__card">
               <img class="books__card--image" src="./assets/img/card.jpg" alt="Book">
-              <div class="card">
-                <h3 class="card__title">The Dark Light</h3>
-                <h5 class="card__price">$ 86.11 USD</h5>
-                <p class="card__description">As the book contains theoretical content as well as solved questions.
+              <div class="card1">
+                <h3 class="card1__title">The Dark Light</h3>
+                <h5 class="card1__price">$ 86.11 USD</h5>
+                <p class="card1__description">As the book contains theoretical content as well as solved questions.
                 </p>
-                <div class="card__printed">Printed Book</div>
-                <div class="card__button">
+                <div class="card1__printed">Printed Book</div>
+                <div class="card1__button">
                   <button class="button button__transparent">
                     <span class="button__text">
                       Order Now
@@ -483,17 +476,291 @@
           </div>
         </div>
       </section>
+      <!-- Readers  -->
+      <section class="readers">
+        <div class="container readers__wrapper">
+          <!-- Description  -->
+          <div class="readers__description">
+            <h2 class="readers__title-1">Words From Our</h2>
+            <h2 class="readers__title">Readers</h2>
+            <div class="readers__text">We believe that bookstores are essential to a healthy culture. They’re where
+              authors can connect with readers, where we discover new writers, where children get hooked on the thrill
+              of reading that can last a lifetime.</div>
+            <div class="readers__raiting">
+              <div class="readers__raiting-circles">
+                <div class="circle-20 circle-20__full"></div>
+                <div class="circle-20 circle-20__full"></div>
+                <div class="circle-20 circle-20__full"></div>
+                <div class="circle-20 circle-20__full"></div>
+                <div class="circle-20 circle-20__half"></div>
+                <div>(4.8/5)</div>
+              </div>
+              <div class="readers__raiting-text">Overall Customer Ratings</div>
+            </div>
+          </div>
+          <!-- Cards  -->
+          <div class="readers__cards">
+            <!-- Cards left  -->
+            <div class="readers__cards-left">
+              <div class="readers__card">
+                <div class="readers__card--header">
+                  <img class="readers__card--image" src="./assets/img/james.png" alt="Author">
+                  <div>
+                    <h4 class="readers__card--author">James Williams</h4>
+                    <div class="readers__card--raiting">
+                      <div class="circle-13 circle-13__full"></div>
+                      <div class="circle-13 circle-13__full"></div>
+                      <div class="circle-13 circle-13__full"></div>
+                      <div class="circle-13 circle-13__full"></div>
+                      <div class="circle-13 circle-13__half"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="readers__card--title">“ Great Books Collections ”</div>
+                <div class="readers__card--text">I was searching this book for many years and I was happy that I could
+                  find it here.</div>
+              </div>
+              <div class="readers__card">
+                <div class="readers__card--header">
+                  <img class="readers__card--image" src="./assets/img/chris.png" alt="Author">
+                  <div>
+                    <h4 class="readers__card--author">Chris Adams</h4>
+                    <div class="readers__card--raiting">
+                      <div class="circle-13 circle-13__full"></div>
+                      <div class="circle-13 circle-13__full"></div>
+                      <div class="circle-13 circle-13__full"></div>
+                      <div class="circle-13 circle-13__full"></div>
+                      <div class="circle-13 circle-13__empty"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="readers__card--title">“ Perfect Response Author ”</div>
+                <div class="readers__card--text">I had a question about the book and the author response was great &
+                  comfort.</div>
+              </div>
+            </div>
+            <!-- Cards right  -->
+            <div class="readers__cards-right">
+              <div class="readers__card">
+                <div class="readers__card--header">
+                  <img class="readers__card--image" src="./assets/img/angelina.png" alt="Author">
+                  <div>
+                    <h4 class="readers__card--author">Angeline Flora</h4>
+                    <div class="readers__card--raiting">
+                      <div class="circle-13 circle-13__full"></div>
+                      <div class="circle-13 circle-13__full"></div>
+                      <div class="circle-13 circle-13__full"></div>
+                      <div class="circle-13 circle-13__full"></div>
+                      <div class="circle-13 circle-13__half"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="readers__card--title">“ Creative Writing Skill ”</div>
+                <div class="readers__card--text">Sent an email after to books arrived to ask about the author & I
+                  received a reply.</div>
 
-      <footer>
-        <!-- <button class="button button__transparent">
-          <span class="button__text">
-            Order Today
-          </span>
-        </button> -->
-      </footer>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Articles -->
+      <section class="articles">
+        <div class="container articles__wrapper">
+          <h2 class="articles__title">Articles & Resources</h2>
+          <div class="articles__main" id="articles">
+            <div class="swiper swiper-custom">
+              <div class="swiper-wrapper articles__carousel">
+                <div class="swiper-slide">
+                  <div class="card">
+                    <img class="card__image" src="./assets/img/slide.jpg" alt="news image" />
+                    <div class="card__wrapper">
+                      <h4 class="card__title">
+                        Significant reading has more info number
+                      </h4>
+                      <p class="card__description">
+                        Override the digital divide with additional clickthroughs from DevOps for real-time schemas.
+                      </p>
+                      <div class="card__footer">
+                        <a class="card__link" href="#">Readmore</a>
+                        <div class="card__date">October 6, 2021</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">
+                    <img class="card__image" src="./assets/img/slide1.jpg" alt="news image" />
+                    <div class="card__wrapper">
+                      <h4 class="card__title">
+                        Many variations of pass majority have suffered
+                      </h4>
+                      <p class="card__description">
+                        Capitalize on low-hanging fruit to identify a ballpark value-added activity to beta test.
+                      </p>
+                      <div class="card__footer">
+                        <a class="card__link" href="#">Readmore</a>
+                        <div class="card__date">October 6, 2021</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="card">
+                    <img class="card__image" src="./assets/img/slide2.jpg" alt="news image" />
+                    <div class="card__wrapper">
+                      <h4 class="card__title">
+                        Words which don’t look even slightly believable
+                      </h4>
+                      <p class="card__description">
+                        Podcasting operational change management inside of workflows to establish a framework.
+                      </p>
+                      <div class="card__footer">
+                        <a class="card__link" href="#">Readmore</a>
+                        <div class="card__date">October 6, 2021</div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <button class="js-slider-button js-slider-button-prev">
+              <svg width="19" height="33" viewBox="0 0 19 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17 31L2 16.4152L17 2" stroke="#1B3764" stroke-width="3" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+
+            </button>
+            <button class="js-slider-button js-slider-button-next">
+              <svg width="19" height="33" viewBox="0 0 19 33" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M17 31L2 16.4152L17 2" stroke="#1B3764" stroke-width="3" stroke-linecap="round"
+                  stroke-linejoin="round" />
+              </svg>
+
+            </button>
+          </div>
+        </div>
+      </section>
+      <!-- Subscription -->
+      <section class="subscription">
+        <div class="container subscription__wrapper">
+          <div class="subscription__content">
+            <h2 class="subscription__title">Get The Best Updates</h2>
+            <p class="subscription__description">
+              Subscribe with your mail id to know the current update in book
+            </p>
+            <p class="subscription__description">
+              edition at your fingertip with in a minute.
+            </p>
+            <div class="subscription__input-button">
+              <input class="subscription__input" type="text" placeholder="Your Email ID..." />
+              <button class="subscription__button" type="button"><span
+                  class="subscription__button--text">Subscribe</span></button>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
+    <!-- Footer  -->
+    <footer class="footer">
+      <div class="container footer__wrapper">
+        <div class="footer__content">
+          <div class="footer__logo">
+            <a class="logo" href="index.html">
+              <div class="logo__img">
+                <svg class="icon icon-book">
+                  <use xlink:href="#icon-book"></use>
+                </svg>
+              </div>
+              <div class="logo__img">
+                <img src="./assets/img/logo.png" alt="Logo">
+              </div>
+            </a>
+            <div class="footer__networks">
+              <a class="footer__networks--item" href="">
+                <svg class="icon icon-facebook icon-facebook__white">
+                  <use xlink:href="#icon-facebook"></use>
+                </svg>
+              </a>
+              <a class="footer__networks--item" href="">
+                <svg class="icon icon-twitter icon-twitter__white">
+                  <use xlink:href="#icon-twitter"></use>
+                </svg>
+              </a>
+              <a class="footer__networks--item" href="">
+                <svg class="icon icon-linkedin icon-linkedin__white">
+                  <use xlink:href="#icon-linkedin"></use>
+                </svg>
+              </a>
+              <a class="footer__networks--item" href="">
+                <svg class="icon icon-instagram icon-instagram__white">
+                  <use xlink:href="#icon-instagram"></use>
+                </svg>
+              </a>
+            </div>
+          </div>
+          <div class="footer__links">
+            <h4 class="footer__title">Explore</h4>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Home</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">About</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Articles</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Our Store</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Contact Us</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer_links">
+            <h4 class="footer__title">Utility Pages</h4>
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a href="#" class="footer__link">Style Guide</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">404 Not Found</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Password Protected</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Licenses</a>
+              </li>
+              <li class="footer__item">
+                <a href="#" class="footer__link">Changelog</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer_contacts">
+            <h4 class="footer__title">Keep in Touch</h4>
+            <div class="footer__list">
+              <!-- <div class="footer__contacts--adress">Address :<a href="adress:24A Kingston St,
+                Los Vegas NC 28202, USA.">
+                  24A Kingston St, Los Vegas
+                  NC 28202, USA.
+                </a>
+              </div> -->
+              <div class="footer__contacts--mail">Mail : <a
+                  href="mailto:johnabraham@gmail.com">johnabraham@gmail.com</a>
+              </div>
+              <div class="footer__contacts--phone">Phone : <a href="tel:(+2) 123 545 9000">(+2) 123 545 9000</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </div>
   <!-- <script defer src="./libs/aos/aos.js"></script> -->
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script defer type="module" src="./index.js"></script>
 </body>
 

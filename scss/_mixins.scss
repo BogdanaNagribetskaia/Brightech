@@ -9,17 +9,18 @@
   display: flex;
   justify-content: center;
   position: relative;
+  // line-height: 50.4px;
 
   &::before {
     content: "";
     position: absolute;
     top: 72px;
     left: 50%;
+    transform: translateX(-50%);
     // !todo
     width: 50px;
     height: 3px;
     background-color: $c-sunglow;
-    line-height: 78px;
   }
 }
 
@@ -38,6 +39,26 @@
     height: 3px;
     background-color: $c-sunglow;
     line-height: 78px;
+  }
+}
+
+@mixin title3 {
+  font-family: $f-Cardo;
+  font-size: $fs-h2;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  // line-height: 50.4px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 72px;
+    left: 50%;
+    // !todo
+    width: 50px;
+    height: 3px;
+    background-color: $c-indigo;
   }
 }
 

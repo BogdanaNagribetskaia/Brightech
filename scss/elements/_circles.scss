@@ -1,0 +1,41 @@
+.circle-20 {
+  min-height: 19px;
+  min-width: 19px;
+  border-radius: 50%;
+  margin-right: 4px;
+  background-color: transparent;
+  border: 1px solid $c-sunglow;
+
+  &:nth-child(5) {
+    margin-right: 10px;
+  }
+
+  &__full {
+    background-color: $c-sunglow;
+  }
+
+  &__half {
+    background: linear-gradient(to right, $c-sunglow 50%, transparent 50%);
+  }
+}
+
+.circle-13 {
+  min-height: 11px;
+  min-width: 11px;
+  border-radius: 50%;
+  margin-right: 4px;
+  background-color: transparent;
+  border: 1px solid $c-sunglow;
+
+  &:nth-child(5) {
+    margin-right: 6px;
+  }
+
+  &__full {
+    background-color: $c-sunglow;
+  }
+
+  &__half {
+    background: linear-gradient(to right, $c-sunglow 50%, transparent 50%);
+  }
+}

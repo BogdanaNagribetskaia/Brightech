@@ -1,0 +1,102 @@
+.footer {
+  background-color: $c-indigo;
+  padding-top: 95px;
+  padding-bottom: 24px;
+  color: $c-white;
+
+  &__wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__content {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__logo {
+    padding-top: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__networks {
+    display: flex;
+    margin-top: 20px;
+
+    &--item {
+      width: 54px;
+      height: 54px;
+      background-color: transparent;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-right: 9px;
+      transition: $t-normal;
+      border: 1px solid $c-sunglow;
+
+      &:hover {
+        background-color: $c-sunglow;
+      }
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  &__title {
+    font-family: $f-Cardo;
+    font-size: $fs-h4;
+    line-height: 33.6px;
+  }
+
+  &__list {
+    margin-top: 24px;
+  }
+
+  &__item {
+    margin-bottom: 9px;
+    line-height: 30.6px;
+    font-size: $fs-description;
+    // color: $c-light-steel-blue;
+
+    &:first-child {
+      margin-right: 49px;
+    }
+  }
+
+  &__contacts {
+    display: flex;
+    flex-direction: column;
+
+    &--adress {
+      font-family: $f-Cardo;
+      font-size: $fs-description;
+      color: $c-light-steel-blue;
+      letter-spacing: 0.18 px;
+      max-width: 234px;
+    }
+
+    &--mail {
+      margin-top: 16px;
+      color: $c-light-steel-blue;
+      font-size: $fs-description;
+      letter-spacing: 0.18 px;
+    }
+
+    &--phone {
+      margin-top: 13px;
+      color: $c-light-steel-blue;
+      font-size: $fs-description;
+      letter-spacing: 0.18 px;
+    }
+  }
+}

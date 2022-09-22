@@ -5,12 +5,22 @@
 
 .icon-facebook,
 .icon-twitter,
-.icon-linkedin {
+.icon-linkedin,
+.icon-instagram {
   color: $c-black;
   font-size: 14px;
+
+  &__white {
+    color: $c-white;
+  }
 }
 
 .icon-cart {
   color: $c-black;
   font-size: 17px;
+}
+
+.icon-left,
+.icon-right {
+  color: $c-sunglow;
 }

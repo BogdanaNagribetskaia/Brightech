@@ -1,0 +1,105 @@
+.readers {
+  &__wrapper {
+    display: flex;
+    padding-top: 138px;
+    padding-bottom: 150px;
+  }
+
+  &__description {
+    display: flex;
+    flex-direction: column;
+    max-width: 468px;
+  }
+
+  &__title-1 {
+    font-family: $f-Cardo;
+    font-size: $fs-h2;
+    line-height: 50.4px;
+    position: relative;
+    margin-top: 100px;
+  }
+
+  &__title {
+    @include title2;
+  }
+
+  &__raiting {
+    margin-top: 27px;
+    font-size: $fs-description;
+  }
+
+  &__raiting-circles {
+    display: flex;
+  }
+
+  &__raiting-text {
+    margin-top: 16px;
+  }
+
+  &__text {
+    margin-top: 62px;
+    color: $c-spanish-gray;
+    font-size: $fs-base;
+    line-height: 33.6px;
+  }
+
+  &__cards {
+    display: flex;
+    color: $c-white;
+  }
+
+  &__cards-left {
+    margin-left: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+
+  &__cards-right {
+    margin-left: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  &__card {
+    padding: 30px 30px 30px 35px;
+    background-color: $c-indigo;
+    max-width: 317px;
+    max-height: 291px;
+
+    &--header {
+      display: flex;
+      font-family: $f-Cardo;
+      font-size: $fs-h4;
+      align-items: center;
+    }
+
+    &--raiting {
+      display: flex;
+      margin-top: 15px;
+    }
+
+    &--image {
+      max-width: 85px;
+      margin-right: 20px;
+    }
+
+    &--title {
+      font-family: $f-Cardo;
+      font-size: $fs-h4 - 2px;
+      margin-top: 25px;
+    }
+
+    &--text {
+      color: $c-light-steel-blue;
+      font-size: $fs-description;
+      line-height: 28.8px;
+      margin-top: 13px;
+    }
+
+    &:nth-child(2) {
+      margin-top: 18px;
+    }
+  }
+}
