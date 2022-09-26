@@ -10,6 +10,10 @@
       padding-top: 50px;
       padding-bottom: 50px;
     }
+    @media (max-width: 480px) {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
   }
 
   &__content {
@@ -29,7 +33,7 @@
     margin-top: 98px;
 
     @media (max-width: 1430px) {
-      margin-top: 60px;
+      margin-top: 40px;
     }
   }
 
@@ -97,7 +101,7 @@
     padding: 20px 30px 30px 30px;
 
     @media (max-width: 1024px) {
-      padding: 8px 8px 8px 8px;
+      padding: 8px 8px 10px 8px;
     }
   }
 
@@ -115,9 +119,12 @@
       font-size: $fs-h5;
     }
     @media (max-width: 1024px) {
-      font-size: $fs-header;
+      font-size: $fs-header - 1px;
       line-height: normal;
       letter-spacing: normal;
+    }
+    @media (max-width: 768px) {
+      font-size: $fs-header - 3px;
     }
   }
 
@@ -134,8 +141,11 @@
       margin-top: 10px;
     }
     @media (max-width: 1024px) {
-      font-size: $fs-header - 2px;
+      font-size: $fs-header - 3px;
       line-height: normal;
+    }
+    @media (max-width: 768px) {
+      font-size: $fs-header - 6px;
     }
   }
 
@@ -188,7 +198,7 @@
     color: $c-indigo;
 
     @media (max-width: 1024px) {
-      font-size: $fs-header - 3px;
+      font-size: $fs-header - 5px;
     }
   }
 }

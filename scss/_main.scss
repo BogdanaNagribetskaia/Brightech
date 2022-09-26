@@ -73,6 +73,11 @@ h5 {
   margin: 0 auto;
   padding-left: 70px;
   padding-right: 70px;
+
+  @media (max-width: 768px) {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
 }
 
 .content {

@@ -7,6 +7,10 @@
       padding-top: 50px;
       padding-bottom: 50px;
     }
+    @media (max-width: 480px) {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
   }
 
   &__content {
@@ -39,6 +43,10 @@
     @media (max-width: 1430px) {
       font-size: $fs-h3;
     }
+    @media (max-width: 768px) {
+      font-size: $fs-base;
+      line-height: normal;
+    }
   }
 
   &__title {
@@ -65,19 +73,32 @@
       line-height: normal;
       font-size: $fs-header - 2px;
     }
+    @media (max-width: 768px) {
+      margin-top: 20px;
+    }
   }
 
   &__rating {
     margin-top: 27px;
     font-size: $fs-description;
+
+    @media (max-width: 1024px) {
+      font-size: $fs-header - 2px;
+      margin-top: 10px;
+    }
   }
 
   &__rating-circles {
     display: flex;
+    align-items: center;
   }
 
   &__rating-text {
     margin-top: 16px;
+
+    @media (max-width: 768px) {
+      margin-top: 5px;
+    }
   }
 
   &__cards {
@@ -97,6 +118,7 @@
     @media (max-width: 1024px) {
       flex-direction: row;
       margin-top: 10px;
+      margin-left: 0;
     }
   }
 
@@ -105,7 +127,7 @@
     @include flex-row;
     justify-content: center;
 
-    @media (max-width: 1430px) {
+    @media (max-width: 1024px) {
       display: none;
     }
   }
@@ -123,7 +145,7 @@
     &:nth-child(2) {
       margin-top: 18px;
 
-      @media (max-width: 1430px) {
+      @media (max-width: 1024px) {
         margin-top: 0;
         margin-left: 10px;
       }
@@ -142,6 +164,9 @@
 
     @media (max-width: 1430px) {
       font-size: $fs-base;
+    }
+    @media (max-width: 768px) {
+      font-size: $fs-base - 8px;
     }
   }
 
@@ -162,6 +187,10 @@
       max-width: 45px;
       margin-right: 10px;
     }
+    @media (max-width: 768px) {
+      max-width: 20px;
+      margin-right: 5px;
+    }
   }
 
   &__title {
@@ -172,6 +201,10 @@
     @media (max-width: 1430px) {
       font-size: $fs-base;
       margin-top: 15px;
+    }
+    @media (max-width: 768px) {
+      font-size: $fs-header - 6px;
+      margin-top: 10px;
     }
   }
 
@@ -184,6 +217,10 @@
     @media (max-width: 1430px) {
       font-size: $fs-description - 2px;
       line-height: normal;
+    }
+    @media (max-width: 768px) {
+      font-size: $fs-header - 6px;
+      margin-top: 10px;
     }
   }
 }

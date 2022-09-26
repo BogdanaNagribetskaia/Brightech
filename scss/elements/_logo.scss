@@ -1,5 +1,5 @@
 .logo {
-  @include flex;
+  @include flex-row;
 
   &__img {
     @include flex;

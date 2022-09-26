@@ -12,11 +12,22 @@
       padding-top: 50px;
       padding-bottom: 50px;
     }
+    @media (max-width: 480px) {
+      @include flex-column;
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
   }
 
   &__description {
     max-width: 605px;
     padding-top: 8px;
+
+    @media (max-width: 480px) {
+      display: flex-column;
+      align-items: center;
+      text-align: center;
+    }
   }
 
   &__title {
@@ -24,6 +35,10 @@
     @include title2;
     font-size: $fs-title;
     color: $c-white;
+
+    @media (max-width: 480px) {
+      @include title;
+    }
   }
 
   &__about {
@@ -39,6 +54,11 @@
     @media (max-width: 1024px) {
       font-size: $fs-description - 2px;
       line-height: normal;
+      margin-top: 40px;
+    }
+    @media (max-width: 768px) {
+      font-size: $fs-header - 4px;
+      margin-top: 20px;
     }
   }
 
@@ -55,14 +75,34 @@
     background-color: transparent;
     cursor: pointer;
 
+    @media (max-width: 768px) {
+      display: none;
+    }
+
     &__text {
       letter-spacing: 0.57 px;
+
+      @media (max-width: 768px) {
+        font-size: $fs-header - 4px;
+        letter-spacing: normal;
+        line-height: normal;
+      }
+      @media (max-width: 480px) {
+        font-size: $fs-header - 6px;
+      }
     }
 
     &:hover {
       color: $c-indigo;
       background-color: $c-white;
       box-shadow: inset 0 0 0 1px $c-sunglow;
+    }
+  }
+
+  &__image {
+    @media (max-width: 480px) {
+      max-width: 200px;
+      margin-top: 10px;
     }
   }
 }

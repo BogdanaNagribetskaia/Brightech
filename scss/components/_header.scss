@@ -12,11 +12,26 @@
     margin: 0 auto;
     padding-top: 22px;
     padding-bottom: 22px;
+
+    @media (max-width: 768px) {
+      padding-top: 10px;
+      padding-bottom: 10px;
+    }
+  }
+
+  &__logo {
+    @media (max-width: 768px) {
+      width: 80%;
+    }
   }
 
   &__networks {
     display: flex;
     margin-left: 36px;
+
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 
   &__navigation {
@@ -45,6 +60,9 @@
 
     @media (max-width: 1430px) {
       margin-left: 10px;
+    }
+    @media (max-width: 768px) {
+      display: none;
     }
   }
 }

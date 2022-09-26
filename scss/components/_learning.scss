@@ -12,6 +12,10 @@
     @media (max-width: 1024px) {
       padding-bottom: 50px;
     }
+    @media (max-width: 480px) {
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
   }
 
   &__content {
@@ -41,10 +45,30 @@
       margin-top: 20px;
       justify-content: space-between;
     }
+    @media (max-width: 768px) {
+      @include flex-column;
+    }
+    @media (max-width: 480px) {
+      margin-top: 0px;
+    }
   }
 
   &__description {
     @include flex-column;
+
+    @media (max-width: 768px) {
+      flex-basis: 70%;
+    }
+    @media (max-width: 580px) {
+      flex-basis: 60%;
+    }
+    @media (max-width: 480px) {
+      margin-top: 0px;
+      margin-left: 0;
+      @include flex-column;
+      align-items: center;
+      text-align: center;
+    }
   }
 
   &__cards {
@@ -82,9 +106,13 @@
       width: 180px;
       height: 220px;
     }
-    @media (max-width: 798px) {
-      width: 140px;
-      height: 220px;
+    @media (max-width: 768px) {
+      width: 130px;
+      height: 150px;
+    }
+    @media (max-width: 480px) {
+      width: 150px;
+      height: 70px;
     }
 
     &:nth-child(2) {
@@ -107,6 +135,15 @@
       max-height: 496px;
       max-width: 420px;
     }
+    @media (max-width: 1024px) {
+      max-height: 310px;
+      max-width: 262px;
+    }
+    @media (max-width: 768px) {
+      right: 0;
+      max-height: 148px;
+      max-width: 126px;
+    }
 
     &::after {
       content: "";
@@ -123,9 +160,14 @@
       }
       @media (max-width: 1024px) {
         top: 8px;
-        left: 8px;
+        left: -16px;
         height: 310px;
         width: 262px;
+      }
+      @media (max-width: 768px) {
+        height: 148px;
+        width: 126px;
+        border: 5px solid $c-sunglow;
       }
     }
   }
@@ -142,6 +184,10 @@
     @media (max-width: 1024px) {
       height: 310px;
       width: 262px;
+    }
+    @media (max-width: 768px) {
+      height: 148px;
+      width: 126px;
     }
   }
 }
@@ -163,6 +209,10 @@
       font-size: $fs-base;
       margin-top: 10px;
     }
+    @media (max-width: 768px) {
+      font-size: $fs-base - 4px;
+      margin-top: 5px;
+    }
 
     &::before {
       content: "";
@@ -181,6 +231,12 @@
         width: 40px;
         height: 40px;
       }
+      @media (max-width: 768px) {
+        bottom: 0;
+        left: -2px;
+        width: 20px;
+        height: 20px;
+      }
     }
   }
 
@@ -198,6 +254,9 @@
       font-size: $fs-header;
       margin-top: 10px;
       line-height: normal;
+    }
+    @media (max-width: 768px) {
+      font-size: $fs-header - 4px;
     }
   }
 }
