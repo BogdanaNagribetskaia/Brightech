@@ -3,54 +3,76 @@
   background-color: $c-alice-blue;
 
   &__wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    padding-top: 125px;
-    padding-bottom: 0px;
+    padding-top: 110px;
+    padding-bottom: 110px;
+
+    @media (max-width: 1430px) {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+  }
+
+  &__content {
     position: relative;
+    @include flex-column;
+    justify-content: center;
+    padding-top: 10px;
   }
 
   &__title {
     @include title;
+    line-height: 50.4px;
   }
 
   &__main {
-    margin-top: 96px;
     position: relative;
+    margin-top: 98px;
+
+    @media (max-width: 1430px) {
+      margin-top: 60px;
+    }
   }
 
   &__carousel {
-    padding-bottom: 145px;
+    padding-bottom: 35px;
   }
 }
 
 .js-slider-button {
-  display: block;
   position: absolute;
-  overflow: hidden;
+  top: 40%;
+  left: 0;
   z-index: 10;
+  overflow: hidden;
+  display: block;
   width: 50px;
   height: 50px;
-  top: 50%;
-  left: 0;
-  border-radius: 50%;
+  padding: 0;
   border: 0;
+  border-radius: 50%;
   transform: translate(-50%, -50%);
   background-color: transparent;
-  padding: 0;
+  cursor: pointer;
 
-  // ::after {
-  //   content: "";
-  //   position: absolute;
-  //   top: 0;
-  //   left: 0;
-  //   width: 50px;
-  //   height: 50px;
-  //   border-radius: 50%;
-  //   background-color: $c-sunglow;
-  //   z-index: 100;
-  // }
+  svg {
+    position: absolute;
+    display: block;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: $c-sunglow;
+  }
 }
 
 .js-slider-button-next {
@@ -60,76 +82,113 @@
 }
 
 .swiper {
-  // margin-bottom: 100px;
-
   &__wrapper {
     display: flex;
   }
 }
 
-.card {
-  width: 100%;
-  height: 624px;
+.articles-card {
+  max-width: 420px;
+  max-height: 624px;
   background-color: $c-white;
   color: $c-indigo;
 
-  &:nth-child(2) {
-    margin-right: 20px;
+  &__wrapper {
+    padding: 20px 30px 30px 30px;
+
+    @media (max-width: 1024px) {
+      padding: 8px 8px 8px 8px;
+    }
   }
 
-  &__wrapper {
-    padding: 25px 30px 30px 30px;
-  }
   &__image {
-    margin-bottom: 30px;
-    width: 100%;
-    // width: 420px;
-    // height: 305px;
+    max-width: 420px;
+    max-height: 351px;
   }
 
   &__title {
     font-size: $fs-h4;
     font-family: $f-Cardo;
-    margin-bottom: 15px;
     line-height: 33.6px;
+
+    @media (max-width: 1430px) {
+      font-size: $fs-h5;
+    }
+    @media (max-width: 1024px) {
+      font-size: $fs-header;
+      line-height: normal;
+      letter-spacing: normal;
+    }
   }
 
   &__description {
     text-transform: none;
     text-align: initial;
-    margin-bottom: 40px;
     font-size: $fs-base;
     line-height: 30.4px;
     color: $c-spanish-gray;
+    margin-top: 18px;
+
+    @media (max-width: 1430px) {
+      font-size: $fs-description;
+      margin-top: 10px;
+    }
+    @media (max-width: 1024px) {
+      font-size: $fs-header - 2px;
+      line-height: normal;
+    }
   }
 
   &__footer {
     display: flex;
-    align-items: center;
-    margin-top: 11px;
     justify-content: space-between;
+    align-items: center;
+    margin-top: 14px;
+
+    @media (max-width: 1430px) {
+      font-size: $fs-description;
+      margin-top: 8px;
+    }
   }
 
   &__link {
-    color: $c-indigo;
+    position: relative;
     font-size: $fs-base;
     font-family: $f-Cardo;
     line-height: 22.8px;
-    position: relative;
+    color: $c-indigo;
+
+    @media (max-width: 1430px) {
+      font-size: $fs-header;
+    }
+    @media (max-width: 1024px) {
+      font-size: $fs-header - 2px;
+    }
 
     &::before {
       content: "";
       position: absolute;
-      top: 30px;
+      top: 26px;
       left: 0;
       width: 95px;
       height: 2px;
       background-color: $c-indigo;
+
+      @media (max-width: 1430px) {
+        width: 85px;
+      }
+      @media (max-width: 1024px) {
+        width: 65px;
+      }
     }
   }
 
   &__date {
-    color: $c-indigo;
     font-size: $fs-header - 1px;
+    color: $c-indigo;
+
+    @media (max-width: 1024px) {
+      font-size: $fs-header - 3px;
+    }
   }
 }

@@ -9,7 +9,10 @@
   display: flex;
   justify-content: center;
   position: relative;
-  // line-height: 50.4px;
+
+  @media (max-width: 1430px) {
+    font-size: $fs-h3;
+  }
 
   &::before {
     content: "";
@@ -17,10 +20,13 @@
     top: 72px;
     left: 50%;
     transform: translateX(-50%);
-    // !todo
     width: 50px;
     height: 3px;
     background-color: $c-sunglow;
+
+    @media (max-width: 1024px) {
+      top: 50px;
+    }
   }
 }
 
@@ -29,6 +35,10 @@
   font-size: $fs-h2;
   line-height: 50.4px;
   position: relative;
+
+  @media (max-width: 1430px) {
+    font-size: $fs-h3;
+  }
 
   &::before {
     content: "";
@@ -39,6 +49,10 @@
     height: 3px;
     background-color: $c-sunglow;
     line-height: 78px;
+
+    @media (max-width: 1024px) {
+      top: 50px;
+    }
   }
 }
 
@@ -48,17 +62,24 @@
   display: flex;
   justify-content: center;
   position: relative;
-  // line-height: 50.4px;
+
+  @media (max-width: 1430px) {
+    font-size: $fs-h3;
+  }
 
   &::before {
     content: "";
     position: absolute;
     top: 72px;
     left: 50%;
-    // !todo
+    transform: translateX(-50%);
     width: 50px;
     height: 3px;
     background-color: $c-indigo;
+
+    @media (max-width: 1024px) {
+      top: 50px;
+    }
   }
 }
 
@@ -66,6 +87,20 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+@mixin flex-row {
+  display: flex;
+  align-items: center;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+@mixin shadow {
+  box-shadow: 5px 5px 8px 0px rgba(0, 0, 0, 0.2);
 }
 
 @mixin backgroundContainCenter {

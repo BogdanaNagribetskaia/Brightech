@@ -1,105 +1,189 @@
 .readers {
   &__wrapper {
-    display: flex;
-    padding-top: 138px;
-    padding-bottom: 150px;
+    padding-top: 120px;
+    padding-bottom: 130px;
+
+    @media (max-width: 1430px) {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
+  }
+
+  &__content {
+    @include flex-row;
+    padding-top: 10px;
+    padding-bottom: 20px;
+
+    @media (max-width: 1024px) {
+      @include flex-column;
+      padding-bottom: 0;
+    }
   }
 
   &__description {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     max-width: 468px;
+
+    @media (max-width: 1024px) {
+      align-items: center;
+    }
   }
 
-  &__title-1 {
+  &__title-top {
+    position: relative;
+    margin-top: 21px;
     font-family: $f-Cardo;
     font-size: $fs-h2;
     line-height: 50.4px;
-    position: relative;
-    margin-top: 100px;
+
+    @media (max-width: 1430px) {
+      font-size: $fs-h3;
+    }
   }
 
   &__title {
     @include title2;
-  }
 
-  &__raiting {
-    margin-top: 27px;
-    font-size: $fs-description;
-  }
-
-  &__raiting-circles {
-    display: flex;
-  }
-
-  &__raiting-text {
-    margin-top: 16px;
+    @media (max-width: 1024px) {
+      @include title;
+      line-height: normal;
+    }
   }
 
   &__text {
     margin-top: 62px;
-    color: $c-spanish-gray;
     font-size: $fs-base;
     line-height: 33.6px;
+    color: $c-spanish-gray;
+
+    @media (max-width: 1430px) {
+      font-size: $fs-header;
+      margin-top: 40px;
+    }
+    @media (max-width: 1024px) {
+      align-items: center;
+      line-height: normal;
+      font-size: $fs-header - 2px;
+    }
+  }
+
+  &__rating {
+    margin-top: 27px;
+    font-size: $fs-description;
+  }
+
+  &__rating-circles {
+    display: flex;
+  }
+
+  &__rating-text {
+    margin-top: 16px;
   }
 
   &__cards {
     display: flex;
+    margin-top: 8px;
     color: $c-white;
   }
 
   &__cards-left {
-    margin-left: 32px;
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     justify-content: space-around;
+    margin-left: 30px;
+
+    @media (max-width: 1430px) {
+      margin-left: 10px;
+    }
+    @media (max-width: 1024px) {
+      flex-direction: row;
+      margin-top: 10px;
+    }
   }
 
   &__cards-right {
     margin-left: 18px;
-    display: flex;
+    @include flex-row;
     justify-content: center;
-    align-items: center;
+
+    @media (max-width: 1430px) {
+      display: none;
+    }
   }
 
   &__card {
-    padding: 30px 30px 30px 35px;
-    background-color: $c-indigo;
     max-width: 317px;
     max-height: 291px;
+    padding: 30px 30px 30px 35px;
+    background-color: $c-indigo;
 
-    &--header {
-      display: flex;
-      font-family: $f-Cardo;
-      font-size: $fs-h4;
-      align-items: center;
-    }
-
-    &--raiting {
-      display: flex;
-      margin-top: 15px;
-    }
-
-    &--image {
-      max-width: 85px;
-      margin-right: 20px;
-    }
-
-    &--title {
-      font-family: $f-Cardo;
-      font-size: $fs-h4 - 2px;
-      margin-top: 25px;
-    }
-
-    &--text {
-      color: $c-light-steel-blue;
-      font-size: $fs-description;
-      line-height: 28.8px;
-      margin-top: 13px;
+    @media (max-width: 1430px) {
+      padding: 10px 10px 10px 10px;
     }
 
     &:nth-child(2) {
       margin-top: 18px;
+
+      @media (max-width: 1430px) {
+        margin-top: 0;
+        margin-left: 10px;
+      }
+    }
+  }
+}
+
+.readers-card {
+  &__header {
+    @include flex-row;
+  }
+
+  &__author {
+    font-family: $f-Cardo;
+    font-size: $fs-h4;
+
+    @media (max-width: 1430px) {
+      font-size: $fs-base;
+    }
+  }
+
+  &__rating {
+    display: flex;
+    margin-top: 15px;
+
+    @media (max-width: 1430px) {
+      margin-top: 5px;
+    }
+  }
+
+  &__image {
+    max-width: 85px;
+    margin-right: 20px;
+
+    @media (max-width: 1430px) {
+      max-width: 45px;
+      margin-right: 10px;
+    }
+  }
+
+  &__title {
+    margin-top: 25px;
+    font-family: $f-Cardo;
+    font-size: $fs-h4 - 2px;
+
+    @media (max-width: 1430px) {
+      font-size: $fs-base;
+      margin-top: 15px;
+    }
+  }
+
+  &__text {
+    margin-top: 15px;
+    font-size: $fs-description;
+    line-height: 28.8px;
+    color: $c-light-steel-blue;
+
+    @media (max-width: 1430px) {
+      font-size: $fs-description - 2px;
+      line-height: normal;
     }
   }
 }

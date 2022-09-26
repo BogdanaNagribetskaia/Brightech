@@ -14,30 +14,36 @@ const swiper = new Swiper('.swiper', {
   slidesPerView: 3,
   spaceBetween: 30,
   loop: true,
-
   navigation: {
     nextEl: '.js-slider-button-next',
     prevEl: '.js-slider-button-prev',
   },
+  breakpoints: {
+    0: {
+      slidesPerView: 3,
+    },
+    1024: {
+      slidesPerView: 3,
+    },
+  },
+});
 
-  // mousewheel: {
-  //   invert: true,
-  // },
+// Animation
 
-  // ! Responsive breakpoints
-  // breakpoints: {
-  //   480: {
-  //     slidesPerView: 1,
-  //     spaceBetween: 20,
-  //   },
-  //   1200: {
-  //     slidesPerView: 2,
-  //     spaceBetween: 30,
-  //   },
-
-  //   1250: {
-  //     slidesPerView: 3,
-  //     spaceBetween: 30,
-  //   },
-  // },
+AOS.init({
+  disable: 'mobile',
+  startEvent: 'DOMContentLoaded',
+  initClassName: 'aos-init',
+  animatedClassName: 'aos-animate',
+  useClassNames: false,
+  disableMutationObserver: false,
+  debounceDelay: 50,
+  throttleDelay: 99,
+  offset: 120,
+  delay: 0,
+  duration: 500,
+  easing: 'ease',
+  once: false,
+  mirror: false,
+  anchorPlacement: 'top-bottom',
 });

@@ -1,19 +1,28 @@
 .subscription {
   background-color: $c-white;
+
   &__wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding-top: 125px;
+    padding-top: 122px;
     padding-bottom: 120px;
+
+    @media (max-width: 1430px) {
+      padding-top: 50px;
+      padding-bottom: 50px;
+    }
   }
 
   &__content {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
     align-items: center;
     background-color: $c-sunglow;
     padding: 96px 150px 115px 150px;
+
+    @media (max-width: 1430px) {
+      padding: 60px 100px 60px 100px;
+    }
   }
 
   &__title {
@@ -24,6 +33,12 @@
   &__description {
     font-size: $fs-description;
     line-height: 28.5px;
+
+    @media (max-width: 1024px) {
+      font-size: $fs-description - 2px;
+      line-height: auto;
+      letter-spacing: normal;
+    }
   }
 
   &__input-button {
@@ -31,14 +46,23 @@
     display: flex;
     width: auto;
     height: 70px;
+
+    @media (max-width: 1024px) {
+      margin-top: 30px;
+    }
   }
 
   &__input {
     padding: 19px 39px;
     border: 1px solid $c-white;
     background-color: $c-white;
-    // height: 100%;
     width: 580px;
+
+    @media (max-width: 1430px) {
+      width: 380px;
+      height: 38px;
+      padding: 3px 39px;
+    }
 
     &:focus,
     &:active {
@@ -55,6 +79,11 @@
     border: 1px solid $c-indigo;
     cursor: pointer;
     transition: $t-normal;
+
+    @media (max-width: 1430px) {
+      height: 46px;
+      padding: 9px 25px;
+    }
 
     &:hover {
       border: 1px solid $c-indigo;

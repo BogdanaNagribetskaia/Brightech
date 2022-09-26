@@ -3,66 +3,125 @@
   color: $c-indigo;
 
   &__wrapper {
-    padding: 127px 50px 148px 50px;
+    padding: 110px 50px 90px 50px;
+
+    @media (max-width: 1430px) {
+      padding: 50px 50px 50px 50px;
+    }
   }
 
   &__title {
+    margin-top: 16px;
     @include title;
+
+    @media (max-width: 1430px) {
+      font-size: $fs-h3;
+    }
   }
 
   &__content {
-    margin-top: 100px;
-    display: flex;
-    flex-basis: 50%;
+    @include flex;
+    align-items: flex-start;
+    padding-bottom: 60px;
+    padding-top: 100px;
+
+    @media (max-width: 1024px) {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
   }
 
   &__card {
-    // max-width: 382px;
     display: flex;
     flex-basis: 50%;
+    margin-left: 12px;
 
-    &:first-child {
-      margin-left: 20px;
-    }
-
-    &--image {
-      max-width: 285px;
-      max-height: 382px;
+    @media (max-width: 1024px) {
+      align-items: center;
     }
   }
 }
 
-.card1 {
-  padding-top: 38px;
-  margin-left: 22px;
-  display: flex;
-  flex-direction: column;
+.books-card {
+  @include flex-column;
+  padding-top: 36px;
+  margin-left: 30px;
+
+  @media (max-width: 1430px) {
+    padding-top: 0;
+  }
+  @media (max-width: 1024px) {
+    margin-left: 10px;
+  }
+
+  &__image {
+    max-width: 285px;
+    max-height: 382px;
+    @include shadow;
+
+    @media (max-width: 1430px) {
+      max-width: 228px;
+      max-height: 305px;
+    }
+    @media (max-width: 1024px) {
+      max-width: 170px;
+      max-height: 210px;
+    }
+  }
 
   &__title {
     font-family: $f-Cardo;
     font-size: $fs-h3;
     line-height: 38.4px;
     letter-spacing: 0.32px;
+
+    @media (max-width: 1430px) {
+      font-size: $fs-h4;
+    }
+    @media (max-width: 1024px) {
+      font-size: $fs-h5;
+    }
   }
 
   &__price {
+    margin-top: 14px;
     font-size: $fs-h5;
     color: $c-sunglow;
-    margin-top: 14px;
+
+    @media (max-width: 1430px) {
+      margin-top: 7px;
+    }
+    @media (max-width: 1024px) {
+      font-size: $fs-header - 2px;
+      margin-top: 2px;
+    }
   }
 
   &__description {
     margin-top: 19px;
     font-size: $fs-base;
     line-height: 28.5px;
+
+    @media (max-width: 1430px) {
+      margin-top: 7px;
+    }
+    @media (max-width: 1024px) {
+      font-size: $fs-header - 2px;
+      line-height: normal;
+    }
   }
 
   &__printed {
+    position: relative;
     margin-left: 24px;
     margin-top: 15px;
     font-size: $fs-h4;
     font-family: $f-Cardo;
-    position: relative;
+    line-height: 28.8px;
+
+    @media (max-width: 1024px) {
+      display: none;
+    }
 
     &::before {
       content: "";
@@ -73,12 +132,15 @@
       height: 16px;
       border-radius: 50%;
       background-color: $c-sunglow;
-      line-height: 78px;
     }
   }
 
   &__button {
-    margin-top: 28px;
-    max-width: 206px;
+    max-width: 210px;
+    margin-top: 27px;
+
+    @media (max-width: 1024px) {
+      margin-top: 10px;
+    }
   }
 }

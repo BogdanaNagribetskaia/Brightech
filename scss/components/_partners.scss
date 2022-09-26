@@ -1,61 +1,94 @@
 .partners {
   background-color: $c-cultured;
+
   &__wrapper {
-    padding: 158px 0 126px;
+    padding-top: 110px;
+    padding-bottom: 125px;
+
+    @media (max-width: 1430px) {
+      padding-top: 50px;
+      padding-bottom: 70px;
+    }
   }
 
   &__title {
+    margin-top: 17px;
     @include title;
   }
 
   &__cards {
+    @include flex;
     margin-top: 75px;
     margin-left: 3px;
-    display: flex;
+
+    @media (max-width: 1430px) {
+      margin-top: 60px;
+    }
   }
 
   &__card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     max-width: 313px;
-    min-height: 254px;
+    max-height: 254px;
+    @include flex-column;
+    align-items: center;
+  }
+}
 
-    &--logo {
-      max-width: 189px;
-      min-height: 100px;
+.partners-card {
+  &__logo {
+    max-width: 189px;
+    max-height: 100px;
+  }
+
+  &__title {
+    margin-top: 26px;
+    font-family: $f-Cardo;
+    font-size: $fs-h4;
+
+    @media (max-width: 1430px) {
+      margin-top: 13px;
     }
+  }
 
-    &--title {
-      margin-top: 26px;
-      font-family: $f-Cardo;
-      font-size: $fs-h4;
+  &__description {
+    display: flex;
+    text-align: center;
+    margin-top: 22px;
+    font-size: $fs-base;
+    color: $c-spanish-gray;
+    line-height: 28.5px;
 
-      // &:first-child {
-      //   margin-top: 21px;
-      //   margin-left: 50px;
-      // }
+    @media (max-width: 1430px) {
+      font-size: $fs-header;
+      margin-top: 13px;
     }
-
-    &--description {
-      display: flex;
-      text-align: center;
-      margin-top: 22px;
-      font-size: $fs-base;
-      color: $c-spanish-gray;
-      line-height: 28.5px;
+    @media (max-width: 1024px) {
+      font-size: $fs-header - 2px;
+      line-height: normal;
     }
+  }
 
-    &:nth-child(2) {
-      margin-left: 14px;
+  &:nth-child(2) {
+    margin-left: 14px;
+
+    @media (max-width: 1430px) {
+      margin-left: 10px;
     }
+  }
 
-    &:nth-child(3) {
-      margin-left: 18px;
+  &:nth-child(3) {
+    margin-left: 18px;
+
+    @media (max-width: 1430px) {
+      margin-left: 10px;
     }
+  }
 
-    &:nth-child(4) {
-      margin-left: 13px;
+  &:nth-child(4) {
+    margin-left: 13px;
+
+    @media (max-width: 1430px) {
+      margin-left: 10px;
     }
   }
 }

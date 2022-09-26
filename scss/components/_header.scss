@@ -3,69 +3,69 @@
   top: 0;
   right: 0;
   left: 0;
+  z-index: 99;
   background-color: $c-indigo;
   color: $c-ghost-white;
-  z-index: 99;
 
   &__wrapper {
+    @include flex;
     margin: 0 auto;
-    display: flex;
-    align-items: center;
     padding-top: 22px;
     padding-bottom: 22px;
-    // todo!
-    // height: 72px;
-
-    @media (max-width: 1024px) {
-      @include flex;
-    }
   }
 
   &__networks {
-    margin-left: 36px;
     display: flex;
-
-    &--item {
-      width: 45px;
-      height: 45px;
-      background-color: $c-white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin-right: 10px;
-      transition: $t-normal;
-
-      &:hover {
-        background-color: $c-sunglow;
-      }
-
-      &:last-child {
-        margin-right: 0;
-      }
-    }
+    margin-left: 36px;
   }
 
   &__navigation {
     margin-left: 260px;
 
+    @media (max-width: 1430px) {
+      margin-left: 30px;
+    }
     @media (max-width: 1024px) {
       margin-left: 0;
     }
   }
 
   &__cart {
-    margin-left: 42px;
+    display: flex;
+    align-items: center;
+    margin-left: 38px;
 
-    @media (max-width: 1024px) {
-      margin-left: 0;
+    @media (max-width: 1430px) {
+      margin-left: 10px;
     }
   }
 
   &__button {
     margin-left: 54px;
 
-    @media (max-width: 1024px) {
-      margin-left: 0;
+    @media (max-width: 1430px) {
+      margin-left: 10px;
+    }
+  }
+}
+
+.networks {
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    margin-right: 10px;
+    transition: $t-normal;
+    background-color: $c-white;
+
+    &:hover {
+      background-color: $c-sunglow;
+    }
+
+    &:last-child {
+      margin-right: 0;
     }
   }
 }

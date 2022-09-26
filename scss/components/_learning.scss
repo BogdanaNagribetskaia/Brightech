@@ -2,24 +2,49 @@
   background-color: $c-cultured;
 
   &__wrapper {
-    padding-top: 138px;
-    padding-bottom: 190px;
+    padding-top: 120px;
+    padding-bottom: 140px;
+
+    @media (max-width: 1430px) {
+      padding-top: 50px;
+      padding-bottom: 90px;
+    }
+    @media (max-width: 1024px) {
+      padding-bottom: 50px;
+    }
+  }
+
+  &__content {
     flex: 50%;
+    padding-top: 16px;
+    padding-bottom: 40px;
+
+    @media (max-width: 1024px) {
+      padding-bottom: 0;
+    }
   }
 
   &__title {
     @include title;
+    line-height: 50.4px;
   }
 
   &__container {
-    margin-top: 70px;
-    display: flex;
-    justify-content: space-between;
+    @include flex;
+    margin-top: 65px;
+
+    @media (max-width: 1430px) {
+      margin-top: 60px;
+      justify-content: space-around;
+    }
+    @media (max-width: 1024px) {
+      margin-top: 20px;
+      justify-content: space-between;
+    }
   }
 
   &__description {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
   }
 
   &__cards {
@@ -28,65 +53,60 @@
 
     &:nth-child(1) {
       margin-top: 78px;
-      margin-bottom: 30px;
+      margin-bottom: 27px;
+
+      @media (max-width: 1430px) {
+        margin-top: 30px;
+        margin-bottom: 27px;
+      }
     }
   }
 
   &__card {
-    padding: 38px 0 0 30px;
-    display: flex;
-    flex-direction: column;
+    position: relative;
+    max-width: 276px;
+    max-height: 232px;
+    @include flex-column;
+    padding: 43px 0 0 30px;
     align-items: flex-start;
     flex: 50%;
     background-color: $c-alice-blue;
+    background-color: red;
     color: $c-indigo;
-    width: 276px;
-    height: 232px;
-    position: relative;
 
-    &--number {
-      margin-left: 11px;
-      color: $c-indigo;
-      font-family: $f-Cardo;
-      font-size: $fs-h4 + 1px;
-      position: relative;
-      z-index: 90;
-
-      &::before {
-        content: "";
-        position: absolute;
-        bottom: -10px;
-        left: -10px;
-        width: 50px;
-        height: 50px;
-        border-radius: 50%;
-        background-color: $c-sunglow;
-        z-index: -1;
-      }
+    @media (max-width: 1430px) {
+      width: 193px;
+      height: 192px;
+      padding: 0 0 0 0;
     }
-
-    &--description {
-      margin-top: 42px;
-      font-family: $f-Cardo;
-      font-size: $fs-h4;
-      line-height: 33.6px;
+    @media (max-width: 1024px) {
+      width: 180px;
+      height: 220px;
+    }
+    @media (max-width: 798px) {
+      width: 140px;
+      height: 220px;
     }
 
     &:nth-child(2) {
-      margin-left: 30px;
+      margin-left: 29px;
+
+      @media (max-width: 1024px) {
+        margin-left: 10px;
+      }
     }
   }
 
-  &__content {
+  &__image-wrapper {
     position: relative;
     right: 37px;
     top: 26px;
+    max-width: 535px;
+    max-height: 632px;
 
-    &--image {
-      position: relative;
-      // max-width: 535px;
-      // max-height: 632px;
-      z-index: 90;
+    @media (max-width: 1430px) {
+      max-height: 496px;
+      max-width: 420px;
     }
 
     &::after {
@@ -97,6 +117,88 @@
       width: 535px;
       height: 632px;
       border: 10px solid $c-sunglow;
+
+      @media (max-width: 1430px) {
+        height: 496px;
+        width: 420px;
+      }
+      @media (max-width: 1024px) {
+        top: 8px;
+        left: 8px;
+        height: 310px;
+        width: 262px;
+      }
+    }
+  }
+  &__image {
+    position: relative;
+    z-index: 90;
+    width: 535px;
+    height: 632px;
+
+    @media (max-width: 1430px) {
+      height: 496px;
+      width: 420px;
+    }
+    @media (max-width: 1024px) {
+      height: 310px;
+      width: 262px;
+    }
+  }
+}
+
+.learning-card {
+  &__number {
+    position: relative;
+    z-index: 90;
+    margin-left: 11px;
+    font-family: $f-Cardo;
+    font-size: $fs-h4 + 1px;
+    color: $c-indigo;
+
+    @media (max-width: 1430px) {
+      font-size: $fs-h5;
+      margin-top: 10px;
+    }
+    @media (max-width: 1024px) {
+      font-size: $fs-base;
+      margin-top: 10px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: -13px;
+      left: -11px;
+      z-index: -1;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: $c-sunglow;
+
+      @media (max-width: 1430px) {
+        bottom: -10px;
+        left: -11px;
+        width: 40px;
+        height: 40px;
+      }
+    }
+  }
+
+  &__description {
+    margin-top: 42px;
+    font-family: $f-Cardo;
+    font-size: $fs-h4;
+    line-height: 33.6px;
+
+    @media (max-width: 1430px) {
+      font-size: $fs-base;
+      margin-top: 15px;
+    }
+    @media (max-width: 1024px) {
+      font-size: $fs-header;
+      margin-top: 10px;
+      line-height: normal;
     }
   }
 }

@@ -3,8 +3,12 @@
 
 <head>
   <meta charset="UTF-8" />
+
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" href="./assets/favico/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <link href="./libs/aos/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
   <link rel="stylesheet" href="index.css" />
   <title>Pages</title>
@@ -61,23 +65,23 @@
               </svg>
             </div>
             <div class="logo__img">
-              <img src="./assets/img/logo.png" alt="Logo">
+              <img class="logo__image" src="./assets/img/logo.png" alt="Logo">
             </div>
           </a>
         </div>
         <!-- Networks -->
         <div class="header__networks">
-          <a class="header__networks--item" href="">
+          <a class="networks__item" href="">
             <svg class="icon icon-facebook">
               <use xlink:href="#icon-facebook"></use>
             </svg>
           </a>
-          <a class="header__networks--item" href="">
+          <a class="networks__item" href="">
             <svg class="icon icon-twitter">
               <use xlink:href="#icon-twitter"></use>
             </svg>
           </a>
-          <a class="header__networks--item" href="">
+          <a class="networks__item" href="">
             <svg class="icon icon-linkedin">
               <use xlink:href="#icon-linkedin"></use>
             </svg>
@@ -124,370 +128,392 @@
         </button>
       </div>
     </header>
-    <div class="content">
-      <!-- Banner -->
-      <section class="banner">
-        <div class="container banner__wrapper">
-          <!-- Description  -->
-          <div class="banner__description">
-            <h5 class="banner__description--subtitle">Welcome To Pages!!!</h5>
-            <h1 class="banner__description--title">Your Books From</h1>
-            <h1 class="banner__description--title">The Best Writer.</h1>
-            <div class="banner__description--about">
-              We believe that reading books are essential to a healthy culture.
-            </div>
-            <div class="banner__description--about">They’re where authors can connect with readers.</div>
-            <!-- Button and link  -->
-            <div class="banner__button-link">
-              <button type="button" class="button">
-                <span class="button__text">
-                  Order Today
-                </span>
-              </button>
-              <a class="banner__button-link--link" href="#">Read Free Demo</a>
-            </div>
-            <!-- Counter  -->
-            <div class="banner__counters">
-              <div class="counter">
-                <h4 class="counter__title">Pages:</h4>
-                <span class="counter__description">
-                  250 pages
-                </span>
-              </div>
-              <div class="counter">
-                <h4 class="counter__title">Length:</h4>
-                <span class="counter__description">
-                  10 Hours
-                </span>
-              </div>
-              <div class="counter">
-                <h4 class="counter__title">Rating:</h4>
-                <span class="counter__description">
-                  4.5/5 (305 ratings)
-                </span>
-              </div>
-            </div>
+    <!-- Banner -->
+    <section class="banner">
+      <div class="container banner__wrapper">
+        <!-- Description  -->
+        <div class="banner__description">
+          <h5 class="banner-description__subtitle">Welcome To Pages!!!
+          </h5>
+          <h1 class="banner-description__title">Your Books From</h1>
+          <h1 class="banner-description__title">The Best Writer.</h1>
+          <div class="banner-description__about">
+            We believe that reading books are essential to a healthy culture.
           </div>
-          <!-- Content  -->
-          <div class="banner__content">
-            <img class="banner__image" src="./assets/img/banner.jpg" alt="">
+          <div class="banner-description__about">They’re where authors can connect with readers.</div>
+          <!-- Button and link  -->
+          <div class="banner__button-link">
+            <button type="button" class="button">
+              <span class="button__text">
+                Order Today
+              </span>
+            </button>
+            <a class="banner__button-link--link" href="#">Read Free Demo</a>
           </div>
-        </div>
-      </section>
-      <!-- Author’s Book -->
-      <section class="books">
-        <div class="container books__wrapper">
-          <h2 class="books__title ">The Author’s Book</h2>
-          <div class="books__content">
-            <!-- Card  -->
-            <div class="books__card">
-              <img class="books__card--image" src="./assets/img/card2.jpg" alt="Book">
-              <div class="card1">
-                <h3 class="card1__title">Atomic One’s</h3>
-                <h5 class="card1__price">$ 13.84 USD</h5>
-                <p class="card1__description">As the book contains theoretical content as well as solved questions.
-                </p>
-                <div class="card1__printed">Printed Book</div>
-                <div class="card1__button">
-                  <button class="button button__transparent">
-                    <span class="button__text">
-                      Order Now
-                    </span>
-                  </button>
-                </div>
-              </div>
+          <!-- Counter  -->
+          <div class="banner__counters">
+            <div class="counter">
+              <h4 class="counter__title">Pages:</h4>
+              <span class="counter__description">
+                250 pages
+              </span>
             </div>
-            <!-- Card 2  -->
-            <div class="books__card">
-              <img class="books__card--image" src="./assets/img/card.jpg" alt="Book">
-              <div class="card1">
-                <h3 class="card1__title">The Dark Light</h3>
-                <h5 class="card1__price">$ 86.11 USD</h5>
-                <p class="card1__description">As the book contains theoretical content as well as solved questions.
-                </p>
-                <div class="card1__printed">Printed Book</div>
-                <div class="card1__button">
-                  <button class="button button__transparent">
-                    <span class="button__text">
-                      Order Now
-                    </span>
-                  </button>
-                </div>
-              </div>
+            <div class="counter">
+              <h4 class="counter__title">Length:</h4>
+              <span class="counter__description">
+                10 Hours
+              </span>
+            </div>
+            <div class="counter">
+              <h4 class="counter__title">Rating:</h4>
+              <span class="counter__description">
+                4.5/5 (305 ratings)
+              </span>
             </div>
           </div>
         </div>
-      </section>
-      <!-- About the Author  -->
-      <section class="author">
-        <div class="container author__wrapper">
-          <!-- Content  -->
-          <div class="author__content">
-            <img class="author__content--image" src="./assets/img/author.jpg" alt="Author">
+        <!-- Image  -->
+        <div class="banner__image">
+          <img src="./assets/img/banner.jpg" alt="">
+        </div>
+      </div>
+    </section>
+    <!-- Author’s Book -->
+    <section class="books">
+      <div class="container books__wrapper">
+        <h2 class="books__title">The Author’s Book</h2>
+        <!-- Cards  -->
+        <div class="books__content">
+          <!-- Card  -->
+          <div class="books__card">
+            <img class="books-card__image" src="./assets/img/card2.jpg" alt="Book">
+            <div class="books-card">
+              <h3 class="books-card__title">Atomic One’s</h3>
+              <h5 class="books-card__price">$ 13.84 USD</h5>
+              <p class="books-card__description">As the book contains theoretical content as well as solved questions.
+              </p>
+              <div class="books-card__printed">Printed Book</div>
+              <div class="books-card__button">
+                <button class="button button__transparent">
+                  <span class="button__text">
+                    Order Now
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+          <!-- Card -->
+          <div class="books__card">
+            <img class="books-card__image" src="./assets/img/card.jpg" alt="Book">
+            <div class="books-card">
+              <h3 class="books-card__title">The Dark Light</h3>
+              <h5 class="books-card__price">$ 86.11 USD</h5>
+              <p class="books-card__description">As the book contains theoretical content as well as solved questions.
+              </p>
+              <div class="books-card__printed">Printed Book</div>
+              <div class="books-card__button">
+                <button class="button button__transparent">
+                  <span class="button__text">
+                    Order Now
+                  </span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- About the Author  -->
+    <section class="author">
+      <div class="container author__wrapper">
+        <div class="author__content">
+          <!-- Image  -->
+          <div class="author__image-wrapper">
+            <img class="author__image" src="./assets/img/author.jpg" alt="Author">
           </div>
           <!-- Description  -->
           <div class="author__description">
-            <h2 class="author__title">
+            <h2 class="author__title" data-aos="fade-left" data-aos-duration="3000">
               About The Author
             </h2>
-            <div class="author__about">We believe that bookstores are essential to a healthy culture. They’re where
+            <div class="author__text" data-aos="fade-right" data-aos-duration="3000">We believe that bookstores are
+              essential to a healthy culture. They’re where
               authors
               can connect with
               readers, where we discover new writers, where children get hooked on the thrill of reading that can last a
               lifetime.</div>
+            <!-- Counters  -->
             <div class="author__counters">
-              <div class="author__counter">
-                <div class="author__counter--number">02</div>
-                <div class="author__counter--text">Books Published</div>
+              <div class="author-counter" data-aos="fade-left" data-aos-duration="3000">
+                <div class="author-counter__number">02</div>
+                <div class="author-counter__text">Books Published</div>
               </div>
-              <div class="author__counter">
-                <div class="author__counter--number">4.5</div>
-                <div class="author__counter--text">User Reviews</div>
+              <div class="author-counter" data-aos="fade-left" data-aos-duration="3000">
+                <div class="author-counter__number">4.5</div>
+                <div class="author-counter__text">User Reviews</div>
               </div>
-              <div class="author__counter">
-                <div class="author__counter--number">04</div>
-                <div class="author__counter--text">Best Seller Awards</div>
+              <div class="author-counter" data-aos="fade-left" data-aos-duration="3000">
+                <div class="author-counter__number">04</div>
+                <div class="author-counter__text">Best Seller Awards</div>
               </div>
             </div>
-            <div class="author__card">
-              <img class="author__card--image" src="./assets/img/qr.jpg" alt="QR">
-              <div class="author__card--info">
-                <div class="author__card--name">John Abraham , Ph.d</div>
-                <div class="author__card--mail">Mail: <a href="mailto:johnabraham@gmail.com">johnabraham@gmail.com</a>
+            <!-- Author card  -->
+            <div class="author__card" data-aos="fade-right" data-aos-duration="3000">
+              <img class="author-card__image" src="./assets/img/qr.jpg" alt="QR">
+              <div class="author-card__info">
+                <div class="author-card__name">John Abraham , Ph.d</div>
+                <div class="author-card__mail">Mail: <a href="mailto:johnabraham@gmail.com">johnabraham@gmail.com</a>
                 </div>
-                <div class="author__card--phone">Phone: <a href="tel:(+2) 123 545 9000">(+2) 123 545 9000</a></div>
+                <div class="author-card__phone">Phone: <a href="tel:(+2) 123 545 9000">(+2) 123 545 9000</a></div>
               </div>
             </div>
-
           </div>
         </div>
-      </section>
-      <!-- Partners -->
-      <section class="partners">
-        <div class="container partners__wrapper">
-          <h2 class="partners__title">Trusted By The Best</h2>
-          <!-- Cards  -->
-          <div class="partners__cards">
-            <!-- Card 1 -->
-            <div class="partners__card">
-              <img class="partners__card--logo" src="./assets/img/amazen.png" alt="Logo">
-              <div class="partners__card--title">Amazen Corp.</div>
-              <div class="partners__card--description">They has been helping readers, music lovers, and videophiles
-                find quality material.</div>
-            </div>
-            <!-- Card 2 -->
-            <div class="partners__card">
-              <img class="partners__card--logo" src="./assets/img/megan.png" alt="Logo">
-              <div class="partners__card--title">Megan Books</div>
-              <div class="partners__card--description">We help physical bookstores manage their overstock to the book
-                inventory.</div>
-            </div>
-            <!-- Card 3 -->
-            <div class="partners__card">
-              <img class="partners__card--logo" src="./assets/img/megank.png" alt="Logo">
-              <div class="partners__card--title">Megank</div>
-              <div class="partners__card--description">Bookstore serving up the full spectrum of Black literature and
-                wine black books.</div>
-            </div>
-            <!-- Card 4 -->
-            <div class="partners__card">
-              <img class="partners__card--logo" src="./assets/img/urban.png" alt="Logo">
-              <div class="partners__card--title">Urban Store</div>
-              <div class="partners__card--description">We also carry the latest records, issues of all of your favorite
-                comic books.</div>
-            </div>
+      </div>
+    </section>
+    <!-- Partners -->
+    <section class="partners">
+      <div class="container partners__wrapper">
+        <h2 class="partners__title">Trusted By The Best</h2>
+        <!-- Cards  -->
+        <div class="partners__cards">
+          <!-- Card -->
+          <div class="partners__card">
+            <img class="partners-card__logo" src="./assets/img/amazen.png" alt="Logo">
+            <div class="partners-card__title">Amazen Corp.</div>
+            <div class="partners-card__description">They has been helping readers, music lovers, and videophiles
+              find quality material.</div>
+          </div>
+          <!-- Card -->
+          <div class="partners__card">
+            <img class="partners-card__logo" src="./assets/img/megan.png" alt="Logo">
+            <div class="partners-card__title">Megan Books</div>
+            <div class="partners-card__description">We help physical bookstores manage their overstock to the book
+              inventory.</div>
+          </div>
+          <!-- Card-->
+          <div class="partners__card">
+            <img class="partners-card__logo" src="./assets/img/megank.png" alt="Logo">
+            <div class="partners-card__title">Megank</div>
+            <div class="partners-card__description">Bookstore serving up the full spectrum of Black literature and
+              wine black books.</div>
+          </div>
+          <!-- Card-->
+          <div class="partners__card">
+            <img class="partners-card__logo" src="./assets/img/urban.png" alt="Logo">
+            <div class="partners-card__title">Urban Store</div>
+            <div class="partners-card__description">We also carry the latest records, issues of all of your favorite
+              comic books.</div>
           </div>
         </div>
-      </section>
-      <!-- Bookstores  -->
-      <section class="bookstores">
-        <div class="container bookstores__wrapper">
-          <!-- Description  -->
-          <div class="bookstores__description">
-            <!-- Title  -->
-            <h2 class="bookstores__title">
-              Get Book Copy Today!
-            </h2>
-            <!-- About  -->
-            <div class="bookstores__about">We believe that bookstores are essential to a healthy culture. They’re where
-              authors can connect with readers.</div>
-            <!-- Button  -->
-            <div>
-              <button class="bookstores__button">
-                <span class="bookstores__text">
-                  Order Today
-                </span>
-              </button>
-            </div>
-          </div>
-          <!-- Content  -->
-          <div class="bookstores__content">
-            <img src="./assets/img/coffee.png" alt="">
+      </div>
+    </section>
+    <!-- Bookstores  -->
+    <section class="bookstores">
+      <div class="container bookstores__wrapper">
+        <!-- Description  -->
+        <div class="bookstores__description">
+          <!-- Title  -->
+          <h2 class="bookstores__title" data-aos="fade-left" data-aos-duration="3000">
+            Get Book Copy Today!
+          </h2>
+          <!-- About  -->
+          <div class="bookstores__about" data-aos="fade-right" data-aos-duration="3000">We believe that bookstores are
+            essential to a healthy culture. They’re where
+            authors can connect with readers.</div>
+          <!-- Button  -->
+          <div>
+            <button class="bookstores__button" data-aos="fade-left" data-aos-duration="3000">
+              <span class="bookstores__text">
+                Order Today
+              </span>
+            </button>
           </div>
         </div>
-      </section>
-      <!-- Learning -->
-      <section class="learning">
-        <div class="container learning__wrapper">
+        <!-- Image  -->
+        <div class="bookstores__image">
+          <img src="./assets/img/coffee.png" alt="">
+        </div>
+      </div>
+    </section>
+    <!-- Learning -->
+    <section class="learning">
+      <div class="container learning__wrapper">
+        <div class="learning__content">
           <h2 class="learning__title">What Will You Learn?</h2>
+          <!-- Cards and image  -->
           <div class="learning__container">
+            <!-- All cards  -->
             <div class="learning__description">
+              <!--2 cards top  -->
               <div class="learning__cards">
-                <div class="learning__card">
-                  <div class="learning__card--number">01</div>
-                  <div class="learning__card--description">Use HDFS & Map Reduce for storing & analyzing data at scale.
+                <div class="learning__card" data-aos="flip-right" data-aos-duration="2000">
+                  <div class="learning-card__number">01</div>
+                  <div class="learning-card__description">Use HDFS & Map Reduce for storing & analyzing data at scale.
                   </div>
                 </div>
-                <div class="learning__card">
-                  <div class="learning__card--number">02</div>
-                  <div class="learning__card--description">Consume streaming data using Spark Streaming, Flink, and
+                <div class="learning__card" data-aos="flip-right" data-aos-duration="2000">
+                  <div class="learning-card__number">02</div>
+                  <div class="learning-card__description">Consume streaming data using Spark Streaming, Flink, and
                     Storm.</div>
                 </div>
               </div>
+              <!-- 2 cards bottom -->
               <div class="learning__cards">
-                <div class="learning__card">
-                  <div class="learning__card--number">03</div>
-                  <div class="learning__card--description">Choose an appropriate data storage technology for your
+                <!-- Card  -->
+                <div class="learning__card" data-aos="flip-right" data-aos-duration="2000">
+                  <div class="learning-card__number">03</div>
+                  <div class="learning-card__description">Choose an appropriate data storage technology for your
                     application</div>
                 </div>
-                <div class="learning__card">
-                  <div class="learning__card--number">04</div>
-                  <div class="learning__card--description">Analyze non-relational data using HBase, Cassandra, and
+                <!-- Card  -->
+                <div class="learning__card" data-aos="flip-right" data-aos-duration="2000">
+                  <div class="learning-card__number">04</div>
+                  <div class="learning-card__description">Analyze non-relational data using HBase, Cassandra, and
                     MongoDB.</div>
                 </div>
               </div>
             </div>
-            <div class="learning__content">
-              <img class="learning__content--image" src="./assets/img/learn.jpg" alt="">
+            <!-- Image  -->
+            <div class="learning__image-wrapper">
+              <img class="learning__image" src="./assets/img/learn.jpg" alt="">
             </div>
           </div>
         </div>
-      </section>
-      <!-- Chapters  -->
-      <section class="chapters">
-        <div class="container chapters__wrapper">
-          <!-- Title -->
-          <h2 class="chapters__title">Enhance Knowledge & Vision</h2>
-          <!-- Description  -->
-          <div class="chapters__description">
-            <!-- Cards top  -->
-            <div class="chapters__cards">
-              <div class="chapters__card">
-                <div class="chapters__card--title">Chapter-1 Get Started Intro</div>
-                <div class="chapters__card--description">You can double your knowledge by reading this ever needed book
-                  that can last a lifetime.
-                </div>
-                <!-- Counter  -->
-                <div class="chapters__counter">
-                  <div class="counter2">
-                    <h4 class="counter2__title">Pages:</h4>
-                    <span class="counter2__description">
-                      106 pages
-                    </span>
-                  </div>
-                  <div class="counter2">
-                    <h4 class="counter2__title">Length:</h4>
-                    <span class="counter2__description">
-                      2 Hours
-                    </span>
-                  </div>
-                </div>
+      </div>
+    </section>
+    <!-- Chapters  -->
+    <section class="chapters">
+      <div class="container chapters__wrapper">
+        <h2 class="chapters__title">Enhance Knowledge & Vision</h2>
+        <!-- Description  -->
+        <div class="chapters__description">
+          <!-- Cards top  -->
+          <div class="chapters__cards">
+            <!-- Card  -->
+            <div class="chapters__card">
+              <div class="chapters-card__title">Chapter-1 Get Started Intro</div>
+              <div class="chapters-card__description">You can double your knowledge by reading this ever needed book
+                that can last a lifetime.
               </div>
-              <div class="chapters__card">
-                <div class="chapters__card--title">Chapter-2 The Roman Culture</div>
-                <div class="chapters__card--description">It will help to improve your life career with the perfect and
-                  needed knowledge about your life.
+              <!-- Counter  -->
+              <div class="chapters__counter">
+                <div class="chapter-counter">
+                  <h4 class="chapter-counter__title">Pages:</h4>
+                  <span class="chapter-counter__description">
+                    106 pages
+                  </span>
                 </div>
-                <!-- Counter  -->
-                <div class="chapters__counter">
-                  <div class="counter2">
-                    <h4 class="counter2__title">Pages:</h4>
-                    <span class="counter2__description">
-                      180 pages
-                    </span>
-                  </div>
-                  <div class="counter2">
-                    <h4 class="counter2__title">Length:</h4>
-                    <span class="counter2__description">
-                      3 Hours
-                    </span>
-                  </div>
+                <div class="chapter-counter">
+                  <h4 class="chapter-counter__title">Length:</h4>
+                  <span class="chapter-counter__description">
+                    2 Hours
+                  </span>
                 </div>
               </div>
             </div>
-            <!-- Cards bottom -->
-            <div class="chapters__cards">
-              <div class="chapters__card">
-                <div class="chapters__card--title">Chapter-3 How They Servived</div>
-                <div class="chapters__card--description">We wanted to create an easy, convenient way for you to get your
-                  books & support.
-                </div>
-                <!-- Counter  -->
-                <div class="chapters__counter">
-                  <div class="counter2">
-                    <h4 class="counter2__title">Pages:</h4>
-                    <span class="counter2__description">
-                      250 pages
-                    </span>
-                  </div>
-                  <div class="counter2">
-                    <h4 class="counter2__title">Length:</h4>
-                    <span class="counter2__description">
-                      4 Hours
-                    </span>
-                  </div>
-                </div>
+            <!-- Card  -->
+            <div class="chapters__card">
+              <div class="chapters-card__title">Chapter-2 The Roman Culture</div>
+              <div class="chapters-card__description">It will help to improve your life career with the perfect and
+                needed knowledge about your life.
               </div>
-              <div class="chapters__card">
-                <div class="chapters__card--title">Chapter-4 The End Of Romans</div>
-                <div class="chapters__card--description">Promote your book via Pages shop to support your writing &
-                  reading career.
+              <!-- Counter  -->
+              <div class="chapters__counter">
+                <div class="chapter-counter">
+                  <h4 class="chapter-counter__title">Pages:</h4>
+                  <span class="chapter-counter__description">
+                    180 pages
+                  </span>
                 </div>
-                <!-- Counter  -->
-                <div class="chapters__counter">
-                  <div class="counter2">
-                    <h4 class="counter2__title">Pages:</h4>
-                    <span class="counter2__description">
-                      175 pages
-                    </span>
-                  </div>
-                  <div class="counter2">
-                    <h4 class="counter2__title">Length:</h4>
-                    <span class="counter2__description">
-                      3 Hours
-                    </span>
-                  </div>
+                <div class="chapter-counter">
+                  <h4 class="chapter-counter__title">Length:</h4>
+                  <span class="chapter-counter__description">
+                    3 Hours
+                  </span>
                 </div>
               </div>
             </div>
           </div>
-          <!-- Section footer  -->
-          <div class="chapters__footer">
-            <div class="chapters__button">
-              <button type="button" class="button button__chapster">
-                <span class="button__text">
-                  Start A 15-Days Free Trail
-                </span>
-              </button>
+          <!-- Cards bottom -->
+          <div class="chapters__cards">
+            <!-- Card  -->
+            <div class="chapters__card">
+              <div class="chapters-card__title">Chapter-3 How They Servived</div>
+              <div class="chapters-card__description">We wanted to create an easy, convenient way for you to get your
+                books & support.
+              </div>
+              <!-- Counter  -->
+              <div class="chapters__counter">
+                <div class="chapter-counter">
+                  <h4 class="chapter-counter__title">Pages:</h4>
+                  <span class="chapter-counter__description">
+                    250 pages
+                  </span>
+                </div>
+                <div class="chapter-counter">
+                  <h4 class="chapter-counter__title">Length:</h4>
+                  <span class="chapter-counter__description">
+                    4 Hours
+                  </span>
+                </div>
+              </div>
             </div>
-            <div class="chapters__footer--text">Short description about each chapter</div>
-            <div class="chapters__footer--text"><a class="chapters__footer--link" href="#">Have any
-                questions? </a> Contact us</div>
+            <!-- Card  -->
+            <div class="chapters__card">
+              <div class="chapters-card__title">Chapter-4 The End Of Romans</div>
+              <div class="chapters-card__description">Promote your book via Pages shop to support your writing &
+                reading career.
+              </div>
+              <!-- Counter  -->
+              <div class="chapters__counter">
+                <div class="chapter-counter">
+                  <h4 class="chapter-counter__title">Pages:</h4>
+                  <span class="chapter-counter__description">
+                    175 pages
+                  </span>
+                </div>
+                <div class="chapter-counter">
+                  <h4 class="chapter-counter__title">Length:</h4>
+                  <span class="chapter-counter__description">
+                    3 Hours
+                  </span>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
-      </section>
-      <!-- Readers  -->
-      <section class="readers">
-        <div class="container readers__wrapper">
+        <!-- Section footer  -->
+        <div class="chapters__footer">
+          <!-- Button  -->
+          <div class="chapters__button" data-aos="fade-down" data-aos-duration="2000">
+            <button type="button" class="button button__chapster">
+              <span class="button__text">
+                Start A 15-Days Free Trail
+              </span>
+            </button>
+          </div>
+          <!-- Links  -->
+          <div class="chapters-footer__text">Short description about each chapter</div>
+          <div class="chapters-footer__text"><a class="chapters-footer__link" href="#">Have any
+              questions? </a> Contact us</div>
+        </div>
+      </div>
+    </section>
+    <!-- Readers  -->
+    <section class="readers">
+      <div class="container readers__wrapper">
+        <div class="readers__content">
           <!-- Description  -->
           <div class="readers__description">
-            <h2 class="readers__title-1">Words From Our</h2>
+            <h2 class="readers__title-top">Words From Our</h2>
             <h2 class="readers__title">Readers</h2>
             <div class="readers__text">We believe that bookstores are essential to a healthy culture. They’re where
               authors can connect with readers, where we discover new writers, where children get hooked on the thrill
               of reading that can last a lifetime.</div>
-            <div class="readers__raiting">
-              <div class="readers__raiting-circles">
+            <!-- Rating -->
+            <div class="readers__rating">
+              <div class="readers__rating-circles">
                 <div class="circle-20 circle-20__full"></div>
                 <div class="circle-20 circle-20__full"></div>
                 <div class="circle-20 circle-20__full"></div>
@@ -495,19 +521,21 @@
                 <div class="circle-20 circle-20__half"></div>
                 <div>(4.8/5)</div>
               </div>
-              <div class="readers__raiting-text">Overall Customer Ratings</div>
+              <div class="readers__rating-text">Overall Customer Ratings</div>
             </div>
           </div>
           <!-- Cards  -->
           <div class="readers__cards">
             <!-- Cards left  -->
             <div class="readers__cards-left">
-              <div class="readers__card">
-                <div class="readers__card--header">
-                  <img class="readers__card--image" src="./assets/img/james.png" alt="Author">
+              <!-- Card  -->
+              <div class="readers__card" data-aos="zoom-in-right" data-aos-duration="2000">
+                <div class="readers-card__header">
+                  <img class="readers-card__image" src="./assets/img/james.png" alt="Author">
                   <div>
-                    <h4 class="readers__card--author">James Williams</h4>
-                    <div class="readers__card--raiting">
+                    <h4 class="readers-card__author">James Williams</h4>
+                    <!-- Rating  -->
+                    <div class="readers-card__rating">
                       <div class="circle-13 circle-13__full"></div>
                       <div class="circle-13 circle-13__full"></div>
                       <div class="circle-13 circle-13__full"></div>
@@ -516,16 +544,18 @@
                     </div>
                   </div>
                 </div>
-                <div class="readers__card--title">“ Great Books Collections ”</div>
-                <div class="readers__card--text">I was searching this book for many years and I was happy that I could
+                <div class="readers-card__title">“ Great Books Collections ”</div>
+                <div class="readers-card__text">I was searching this book for many years and I was happy that I could
                   find it here.</div>
               </div>
-              <div class="readers__card">
-                <div class="readers__card--header">
-                  <img class="readers__card--image" src="./assets/img/chris.png" alt="Author">
+              <!-- Card  -->
+              <div class="readers__card" data-aos="zoom-in-right" data-aos-duration="2000">
+                <div class="readers-card__header">
+                  <img class="readers-card__image" src="./assets/img/chris.png" alt="Author">
                   <div>
-                    <h4 class="readers__card--author">Chris Adams</h4>
-                    <div class="readers__card--raiting">
+                    <h4 class="readers-card__author">Chris Adams</h4>
+                    <!-- Rating  -->
+                    <div class="readers-card__rating">
                       <div class="circle-13 circle-13__full"></div>
                       <div class="circle-13 circle-13__full"></div>
                       <div class="circle-13 circle-13__full"></div>
@@ -534,19 +564,20 @@
                     </div>
                   </div>
                 </div>
-                <div class="readers__card--title">“ Perfect Response Author ”</div>
-                <div class="readers__card--text">I had a question about the book and the author response was great &
+                <div class="readers-card__title">“ Perfect Response Author ”</div>
+                <div class="readers-card__text">I had a question about the book and the author response was great &
                   comfort.</div>
               </div>
             </div>
-            <!-- Cards right  -->
-            <div class="readers__cards-right">
+            <!-- Card right  -->
+            <div class="readers__cards-right" data-aos="zoom-in-right" data-aos-duration="2000">
               <div class="readers__card">
-                <div class="readers__card--header">
-                  <img class="readers__card--image" src="./assets/img/angelina.png" alt="Author">
+                <div class="readers-card__header">
+                  <img class="readers-card__image" src="./assets/img/angelina.png" alt="Author">
                   <div>
-                    <h4 class="readers__card--author">Angeline Flora</h4>
-                    <div class="readers__card--raiting">
+                    <h4 class="readers-card__author">Angeline Flora</h4>
+                    <!-- Rating  -->
+                    <div class="readers-card__rating">
                       <div class="circle-13 circle-13__full"></div>
                       <div class="circle-13 circle-13__full"></div>
                       <div class="circle-13 circle-13__full"></div>
@@ -555,69 +586,75 @@
                     </div>
                   </div>
                 </div>
-                <div class="readers__card--title">“ Creative Writing Skill ”</div>
-                <div class="readers__card--text">Sent an email after to books arrived to ask about the author & I
+                <div class="readers-card__title">“ Creative Writing Skill ”</div>
+                <div class="readers-card__text">Sent an email after to books arrived to ask about the author & I
                   received a reply.</div>
-
               </div>
             </div>
           </div>
         </div>
-      </section>
-      <!-- Articles -->
-      <section class="articles">
-        <div class="container articles__wrapper">
+      </div>
+    </section>
+    <!-- Articles -->
+    <section class="articles">
+      <div class="container articles__wrapper">
+        <div class="articles__content">
           <h2 class="articles__title">Articles & Resources</h2>
+          <!-- Slider and button  -->
           <div class="articles__main" id="articles">
+            <!-- Swiper  -->
             <div class="swiper swiper-custom">
               <div class="swiper-wrapper articles__carousel">
+                <!-- Slide  -->
                 <div class="swiper-slide">
-                  <div class="card">
-                    <img class="card__image" src="./assets/img/slide.jpg" alt="news image" />
-                    <div class="card__wrapper">
-                      <h4 class="card__title">
+                  <div class="articles-card">
+                    <img class="articles-card__image" src="./assets/img/slide.jpg" alt="news image" />
+                    <div class="articles-card__wrapper">
+                      <h4 class="articles-card__title">
                         Significant reading has more info number
                       </h4>
-                      <p class="card__description">
+                      <p class="articles-card__description">
                         Override the digital divide with additional clickthroughs from DevOps for real-time schemas.
                       </p>
-                      <div class="card__footer">
-                        <a class="card__link" href="#">Readmore</a>
-                        <div class="card__date">October 6, 2021</div>
+                      <div class="articles-card__footer">
+                        <a class="articles-card__link" href="#">Readmore</a>
+                        <div class="articles-card__date">October 6, 2021</div>
                       </div>
                     </div>
                   </div>
                 </div>
+                <!-- Slide  -->
                 <div class="swiper-slide">
-                  <div class="card">
-                    <img class="card__image" src="./assets/img/slide1.jpg" alt="news image" />
-                    <div class="card__wrapper">
-                      <h4 class="card__title">
+                  <div class="articles-card">
+                    <img class="articles-card__image" src="./assets/img/slide1.jpg" alt="news image" />
+                    <div class="articles-card__wrapper">
+                      <h4 class="articles-card__title">
                         Many variations of pass majority have suffered
                       </h4>
-                      <p class="card__description">
+                      <p class="articles-card__description">
                         Capitalize on low-hanging fruit to identify a ballpark value-added activity to beta test.
                       </p>
-                      <div class="card__footer">
-                        <a class="card__link" href="#">Readmore</a>
-                        <div class="card__date">October 6, 2021</div>
+                      <div class="articles-card__footer">
+                        <a class="articles-card__link" href="#">Readmore</a>
+                        <div class="articles-card__date">October 6, 2021</div>
                       </div>
                     </div>
                   </div>
                 </div>
+                <!-- Slide  -->
                 <div class="swiper-slide">
-                  <div class="card">
-                    <img class="card__image" src="./assets/img/slide2.jpg" alt="news image" />
-                    <div class="card__wrapper">
-                      <h4 class="card__title">
+                  <div class="articles-card">
+                    <img class="articles-card__image" src="./assets/img/slide2.jpg" alt="news image" />
+                    <div class="articles-card__wrapper">
+                      <h4 class="articles-card__title">
                         Words which don’t look even slightly believable
                       </h4>
-                      <p class="card__description">
+                      <p class="articles-card__description">
                         Podcasting operational change management inside of workflows to establish a framework.
                       </p>
-                      <div class="card__footer">
-                        <a class="card__link" href="#">Readmore</a>
-                        <div class="card__date">October 6, 2021</div>
+                      <div class="articles-card__footer">
+                        <a class="articles-card__link" href="#">Readmore</a>
+                        <div class="articles-card__date">October 6, 2021</div>
                       </div>
                     </div>
                   </div>
@@ -629,7 +666,6 @@
                 <path d="M17 31L2 16.4152L17 2" stroke="#1B3764" stroke-width="3" stroke-linecap="round"
                   stroke-linejoin="round" />
               </svg>
-
             </button>
             <button class="js-slider-button js-slider-button-next">
               <svg width="19" height="33" viewBox="0 0 19 33" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -640,31 +676,33 @@
             </button>
           </div>
         </div>
-      </section>
-      <!-- Subscription -->
-      <section class="subscription">
-        <div class="container subscription__wrapper">
-          <div class="subscription__content">
-            <h2 class="subscription__title">Get The Best Updates</h2>
-            <p class="subscription__description">
-              Subscribe with your mail id to know the current update in book
-            </p>
-            <p class="subscription__description">
-              edition at your fingertip with in a minute.
-            </p>
-            <div class="subscription__input-button">
-              <input class="subscription__input" type="text" placeholder="Your Email ID..." />
-              <button class="subscription__button" type="button"><span
-                  class="subscription__button--text">Subscribe</span></button>
-            </div>
+
+      </div>
+    </section>
+    <!-- Subscription -->
+    <section class="subscription">
+      <div class="container subscription__wrapper">
+        <div class="subscription__content">
+          <h2 class="subscription__title">Get The Best Updates</h2>
+          <!-- Description  -->
+          <p class="subscription__description">
+            Subscribe with your mail id to know the current update in book edition at your fingertip with in a minute.
+          </p>
+          <!-- Input  -->
+          <div class="subscription__input-button">
+            <input class="subscription__input" data-aos="fade-right" data-aos-duration="2000" type="text"
+              placeholder="Your Email ID..." />
+            <button class="subscription__button" data-aos="fade-left" data-aos-duration="2000" type="button"><span
+                class="subscription__button--text">Subscribe</span></button>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
     <!-- Footer  -->
     <footer class="footer">
       <div class="container footer__wrapper">
         <div class="footer__content">
+          <!-- Logo  -->
           <div class="footer__logo">
             <a class="logo" href="index.html">
               <div class="logo__img">
@@ -673,7 +711,7 @@
                 </svg>
               </div>
               <div class="logo__img">
-                <img src="./assets/img/logo.png" alt="Logo">
+                <img class="logo__image" src="./assets/img/logo.png" alt="Logo">
               </div>
             </a>
             <div class="footer__networks">
@@ -699,6 +737,7 @@
               </a>
             </div>
           </div>
+          <!-- Links  -->
           <div class="footer__links">
             <h4 class="footer__title">Explore</h4>
             <ul class="footer__list">
@@ -719,7 +758,8 @@
               </li>
             </ul>
           </div>
-          <div class="footer_links">
+          <!-- Links  -->
+          <div class="footer__links">
             <h4 class="footer__title">Utility Pages</h4>
             <ul class="footer__list">
               <li class="footer__item">
@@ -739,30 +779,45 @@
               </li>
             </ul>
           </div>
-          <div class="footer_contacts">
+          <!-- Contacts  -->
+          <div class="footer__contacts">
             <h4 class="footer__title">Keep in Touch</h4>
-            <div class="footer__list">
-              <!-- <div class="footer__contacts--adress">Address :<a href="adress:24A Kingston St,
-                Los Vegas NC 28202, USA.">
-                  24A Kingston St, Los Vegas
-                  NC 28202, USA.
-                </a>
-              </div> -->
-              <div class="footer__contacts--mail">Mail : <a
-                  href="mailto:johnabraham@gmail.com">johnabraham@gmail.com</a>
+            <div class="contacts">
+              <div class="contacts__titles">
+                <div class="contacts__title">Address :</div>
+                <div class="contacts__title">Mail :
+                </div>
+                <div class="contacts__title">Phone : </div>
               </div>
-              <div class="footer__contacts--phone">Phone : <a href="tel:(+2) 123 545 9000">(+2) 123 545 9000</a></div>
+              <div class="contacts__list">
+                <a class="contacts__link" href="adress:24A Kingston St,
+      Los Vegas NC 28202, USA.">
+                  24A Kingston St, Los Vegas NC 28202, USA.
+                </a>
+                <a class="contacts__link" href="mailto:johnabraham@gmail.com">johnabraham@gmail.com</a>
+                <a class="contacts__link" href="tel:(+2) 123 545 9000">(+2) 123 545 9000</a>
+              </div>
             </div>
           </div>
+        </div>
+        <!-- Author  -->
+        <div class="footer__author">
+          <a class="footer__author-links">
+            © Drafted by
+          </a>
+          <div class="footer__author-text">VictorFlow </div>
+          <a class="footer__author-links">
+            - Powered by
+          </a>
+          <div class="footer__author-text">Webflow</div>
         </div>
       </div>
     </footer>
   </div>
-  <!-- <script defer src="./libs/aos/aos.js"></script> -->
 
+  <script defer src="./libs/aos/aos.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
   <script defer type="module" src="./index.js"></script>
 </body>
-
 
 </html>
