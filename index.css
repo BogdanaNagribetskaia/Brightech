@@ -1523,7 +1523,6 @@ ul {
   align-items: flex-start;
   flex: 50%;
   background-color: #f4f8ff;
-  background-color: red;
   color: #1b3764;
 }
 @media (max-width: 1430px) {
