@@ -34,7 +34,7 @@ const swiper = new Swiper('.swiper', {
   },
 });
 
-// Animation
+// Animation AOS
 
 AOS.init({
   disable: 'mobile',
