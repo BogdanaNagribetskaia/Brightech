@@ -30,6 +30,7 @@
     }
     @media (max-width: 480px) {
       @include flex-column;
+      margin-top: 20px;
     }
   }
 
